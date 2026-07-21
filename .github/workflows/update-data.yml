@@ -1,0 +1,31 @@
+name: 每月更新資料
+
+on:
+  schedule:
+    - cron: "0 2 1 * *"      # 每月 1 號 UTC 02:00（台灣早上 10 點）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - run: python scripts/build_data.py
+      - name: 有變動就 commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data.js)" ]; then
+            git add data.js
+            git commit -m "自動更新資料 $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "資料沒有變動"
+          fi
