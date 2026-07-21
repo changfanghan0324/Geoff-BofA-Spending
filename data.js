@@ -1,5 +1,5 @@
 window.CARD_DATA = {
- "generated_at": "2026-07-21T22:03:17+08:00",
+ "generated_at": "2026-07-21T14:19:43+00:00",
  "title": "Geoff BofA Spending",
  "currency": "$",
  "years": [
