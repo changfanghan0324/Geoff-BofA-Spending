@@ -1,15 +1,2258 @@
 window.CARD_DATA = {
- "generated_at": "2026-07-21T14:19:43+00:00",
+ "generated_at": "2026-07-21T23:14:41+08:00",
  "title": "Geoff BofA Spending",
  "currency": "$",
  "years": [
   {
+   "year": "2019",
+   "summary": {
+    "total_expense": 3995.24,
+    "total_credit": 8922.22,
+    "net": 4926.98,
+    "count": 138,
+    "end_balance": 4926.98
+   },
+   "categories": [
+    {
+     "name": "Personal Transfers",
+     "total": 2263.29,
+     "count": 17,
+     "share": 0.5665
+    },
+    {
+     "name": "Shopping",
+     "total": 494.18,
+     "count": 15,
+     "share": 0.1237
+    },
+    {
+     "name": "Travel & Transportation",
+     "total": 472.09,
+     "count": 31,
+     "share": 0.1182
+    },
+    {
+     "name": "Dining & Food",
+     "total": 457.41,
+     "count": 34,
+     "share": 0.1145
+    },
+    {
+     "name": "Groceries & Daily",
+     "total": 127.19,
+     "count": 13,
+     "share": 0.0318
+    },
+    {
+     "name": "Entertainment & Subscriptions",
+     "total": 105.08,
+     "count": 8,
+     "share": 0.0263
+    },
+    {
+     "name": "Personal Care",
+     "total": 46.0,
+     "count": 2,
+     "share": 0.0115
+    },
+    {
+     "name": "Tuition & Education",
+     "total": 30.0,
+     "count": 1,
+     "share": 0.0075
+    }
+   ],
+   "months": [
+    {
+     "month": "2019-07",
+     "expense": 24.64,
+     "credit": 1433.02
+    },
+    {
+     "month": "2019-08",
+     "expense": 592.37,
+     "credit": 1013.93
+    },
+    {
+     "month": "2019-09",
+     "expense": 384.62,
+     "credit": 80.0
+    },
+    {
+     "month": "2019-10",
+     "expense": 768.79,
+     "credit": 1014.0
+    },
+    {
+     "month": "2019-11",
+     "expense": 1020.64,
+     "credit": 2852.13
+    },
+    {
+     "month": "2019-12",
+     "expense": 1204.18,
+     "credit": 2529.14
+    }
+   ],
+   "records": [
+    {
+     "date": "2019-07-22",
+     "category": "Entertainment & Subscriptions",
+     "description": "會員訂閱",
+     "expense": 13.93,
+     "credit": 0.0,
+     "balance": 1419.09,
+     "amount": -13.93
+    },
+    {
+     "date": "2019-07-22",
+     "category": "Credits / Funding",
+     "description": "開始",
+     "expense": 0.0,
+     "credit": 1433.02,
+     "balance": 1433.02,
+     "amount": 1433.02
+    },
+    {
+     "date": "2019-07-29",
+     "category": "Entertainment & Subscriptions",
+     "description": "影音／遊戲／電影",
+     "expense": 10.71,
+     "credit": 0.0,
+     "balance": 1408.38,
+     "amount": -10.71
+    },
+    {
+     "date": "2019-08-19",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 1000.0,
+     "balance": 2408.38,
+     "amount": 1000.0
+    },
+    {
+     "date": "2019-08-19",
+     "category": "Credits / Funding",
+     "description": "商家退款／調整",
+     "expense": 0.0,
+     "credit": 13.93,
+     "balance": 2422.31,
+     "amount": 13.93
+    },
+    {
+     "date": "2019-08-20",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 5.66,
+     "credit": 0.0,
+     "balance": 2405.94,
+     "amount": -5.66
+    },
+    {
+     "date": "2019-08-20",
+     "category": "Entertainment & Subscriptions",
+     "description": "影音／遊戲／電影",
+     "expense": 10.71,
+     "credit": 0.0,
+     "balance": 2411.6,
+     "amount": -10.71
+    },
+    {
+     "date": "2019-08-22",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 500.0,
+     "credit": 0.0,
+     "balance": 1905.94,
+     "amount": -500.0
+    },
+    {
+     "date": "2019-08-29",
+     "category": "Tuition & Education",
+     "description": "學校／申請／學費",
+     "expense": 30.0,
+     "credit": 0.0,
+     "balance": 1875.94,
+     "amount": -30.0
+    },
+    {
+     "date": "2019-08-30",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 46.0,
+     "credit": 0.0,
+     "balance": 1829.94,
+     "amount": -46.0
+    },
+    {
+     "date": "2019-09-03",
+     "category": "Personal Care",
+     "description": "理髮／美容",
+     "expense": 13.0,
+     "credit": 0.0,
+     "balance": 1816.94,
+     "amount": -13.0
+    },
+    {
+     "date": "2019-09-03",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 9.9,
+     "credit": 0.0,
+     "balance": 1807.04,
+     "amount": -9.9
+    },
+    {
+     "date": "2019-09-09",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 54.0,
+     "credit": 0.0,
+     "balance": 1753.04,
+     "amount": -54.0
+    },
+    {
+     "date": "2019-09-09",
+     "category": "Entertainment & Subscriptions",
+     "description": "影音／遊戲／電影",
+     "expense": 22.99,
+     "credit": 0.0,
+     "balance": 1719.33,
+     "amount": -22.99
+    },
+    {
+     "date": "2019-09-09",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 21.27,
+     "credit": 0.0,
+     "balance": 1698.06,
+     "amount": -21.27
+    },
+    {
+     "date": "2019-09-09",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 10.72,
+     "credit": 0.0,
+     "balance": 1742.32,
+     "amount": -10.72
+    },
+    {
+     "date": "2019-09-16",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 80.0,
+     "balance": 1778.06,
+     "amount": 80.0
+    },
+    {
+     "date": "2019-09-16",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 3.7,
+     "credit": 0.0,
+     "balance": 1756.33,
+     "amount": -3.7
+    },
+    {
+     "date": "2019-09-16",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 8.72,
+     "credit": 0.0,
+     "balance": 1586.91,
+     "amount": -8.72
+    },
+    {
+     "date": "2019-09-16",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 8.34,
+     "credit": 0.0,
+     "balance": 1760.03,
+     "amount": -8.34
+    },
+    {
+     "date": "2019-09-16",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 160.7,
+     "credit": 0.0,
+     "balance": 1595.63,
+     "amount": -160.7
+    },
+    {
+     "date": "2019-09-16",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 9.69,
+     "credit": 0.0,
+     "balance": 1768.37,
+     "amount": -9.69
+    },
+    {
+     "date": "2019-09-17",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 4.84,
+     "credit": 0.0,
+     "balance": 1582.07,
+     "amount": -4.84
+    },
+    {
+     "date": "2019-09-18",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 7.29,
+     "credit": 0.0,
+     "balance": 1574.78,
+     "amount": -7.29
+    },
+    {
+     "date": "2019-09-20",
+     "category": "Entertainment & Subscriptions",
+     "description": "影音／遊戲／電影",
+     "expense": 17.15,
+     "credit": 0.0,
+     "balance": 1557.63,
+     "amount": -17.15
+    },
+    {
+     "date": "2019-09-23",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 15.0,
+     "credit": 0.0,
+     "balance": 1542.63,
+     "amount": -15.0
+    },
+    {
+     "date": "2019-09-25",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 2.44,
+     "credit": 0.0,
+     "balance": 1540.19,
+     "amount": -2.44
+    },
+    {
+     "date": "2019-09-27",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 9.47,
+     "credit": 0.0,
+     "balance": 1530.72,
+     "amount": -9.47
+    },
+    {
+     "date": "2019-09-30",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 5.4,
+     "credit": 0.0,
+     "balance": 1525.32,
+     "amount": -5.4
+    },
+    {
+     "date": "2019-10-01",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 15.0,
+     "credit": 0.0,
+     "balance": 1502.04,
+     "amount": -15.0
+    },
+    {
+     "date": "2019-10-01",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 8.28,
+     "credit": 0.0,
+     "balance": 1517.04,
+     "amount": -8.28
+    },
+    {
+     "date": "2019-10-02",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 12.26,
+     "credit": 0.0,
+     "balance": 1489.78,
+     "amount": -12.26
+    },
+    {
+     "date": "2019-10-03",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 1000.0,
+     "balance": 2489.78,
+     "amount": 1000.0
+    },
+    {
+     "date": "2019-10-07",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 27.97,
+     "credit": 0.0,
+     "balance": 2461.81,
+     "amount": -27.97
+    },
+    {
+     "date": "2019-10-08",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 24.89,
+     "credit": 0.0,
+     "balance": 2436.92,
+     "amount": -24.89
+    },
+    {
+     "date": "2019-10-09",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 50.0,
+     "credit": 0.0,
+     "balance": 2386.92,
+     "amount": -50.0
+    },
+    {
+     "date": "2019-10-10",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 10.0,
+     "credit": 0.0,
+     "balance": 2376.92,
+     "amount": -10.0
+    },
+    {
+     "date": "2019-10-10",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 28.75,
+     "credit": 0.0,
+     "balance": 2348.17,
+     "amount": -28.75
+    },
+    {
+     "date": "2019-10-11",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 1.83,
+     "credit": 0.0,
+     "balance": 2346.34,
+     "amount": -1.83
+    },
+    {
+     "date": "2019-10-15",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 284.0,
+     "credit": 0.0,
+     "balance": 2016.25,
+     "amount": -284.0
+    },
+    {
+     "date": "2019-10-15",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 29.9,
+     "credit": 0.0,
+     "balance": 2316.44,
+     "amount": -29.9
+    },
+    {
+     "date": "2019-10-15",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 16.19,
+     "credit": 0.0,
+     "balance": 2300.25,
+     "amount": -16.19
+    },
+    {
+     "date": "2019-10-16",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 33.22,
+     "credit": 0.0,
+     "balance": 1983.03,
+     "amount": -33.22
+    },
+    {
+     "date": "2019-10-17",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 9.09,
+     "credit": 0.0,
+     "balance": 1956.23,
+     "amount": -9.09
+    },
+    {
+     "date": "2019-10-17",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 6.57,
+     "credit": 0.0,
+     "balance": 1949.66,
+     "amount": -6.57
+    },
+    {
+     "date": "2019-10-17",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 17.71,
+     "credit": 0.0,
+     "balance": 1965.32,
+     "amount": -17.71
+    },
+    {
+     "date": "2019-10-18",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 2.17,
+     "credit": 0.0,
+     "balance": 1947.49,
+     "amount": -2.17
+    },
+    {
+     "date": "2019-10-28",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 3.0,
+     "credit": 0.0,
+     "balance": 1863.94,
+     "amount": -3.0
+    },
+    {
+     "date": "2019-10-28",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 100.0,
+     "credit": 0.0,
+     "balance": 1763.94,
+     "amount": -100.0
+    },
+    {
+     "date": "2019-10-28",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 8.75,
+     "credit": 0.0,
+     "balance": 1938.74,
+     "amount": -8.75
+    },
+    {
+     "date": "2019-10-28",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 8.75,
+     "credit": 0.0,
+     "balance": 1900.0,
+     "amount": -8.75
+    },
+    {
+     "date": "2019-10-28",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 12.29,
+     "credit": 0.0,
+     "balance": 1866.94,
+     "amount": -12.29
+    },
+    {
+     "date": "2019-10-28",
+     "category": "Entertainment & Subscriptions",
+     "description": "影音／遊戲／電影",
+     "expense": 15.58,
+     "credit": 0.0,
+     "balance": 1884.42,
+     "amount": -15.58
+    },
+    {
+     "date": "2019-10-28",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 29.99,
+     "credit": 0.0,
+     "balance": 1908.75,
+     "amount": -29.99
+    },
+    {
+     "date": "2019-10-28",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 5.19,
+     "credit": 0.0,
+     "balance": 1879.23,
+     "amount": -5.19
+    },
+    {
+     "date": "2019-10-29",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 14.0,
+     "balance": 1777.94,
+     "amount": 14.0
+    },
+    {
+     "date": "2019-10-29",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 7.41,
+     "credit": 0.0,
+     "balance": 1770.53,
+     "amount": -7.41
+    },
+    {
+     "date": "2019-11-01",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 1421.0,
+     "balance": 3191.53,
+     "amount": 1421.0
+    },
+    {
+     "date": "2019-11-01",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 6.17,
+     "credit": 0.0,
+     "balance": 3185.36,
+     "amount": -6.17
+    },
+    {
+     "date": "2019-11-04",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 6.84,
+     "credit": 0.0,
+     "balance": 3173.14,
+     "amount": -6.84
+    },
+    {
+     "date": "2019-11-04",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 5.38,
+     "credit": 0.0,
+     "balance": 3179.98,
+     "amount": -5.38
+    },
+    {
+     "date": "2019-11-06",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 500.0,
+     "credit": 0.0,
+     "balance": 2673.14,
+     "amount": -500.0
+    },
+    {
+     "date": "2019-11-07",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 7.0,
+     "balance": 2680.14,
+     "amount": 7.0
+    },
+    {
+     "date": "2019-11-07",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 20.99,
+     "credit": 0.0,
+     "balance": 2659.15,
+     "amount": -20.99
+    },
+    {
+     "date": "2019-11-12",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 22.0,
+     "credit": 0.0,
+     "balance": 2604.15,
+     "amount": -22.0
+    },
+    {
+     "date": "2019-11-12",
+     "category": "Personal Care",
+     "description": "理髮／美容",
+     "expense": 33.0,
+     "credit": 0.0,
+     "balance": 2626.15,
+     "amount": -33.0
+    },
+    {
+     "date": "2019-11-12",
+     "category": "Travel & Transportation",
+     "description": "訂票／旅遊",
+     "expense": 171.46,
+     "credit": 0.0,
+     "balance": 2432.69,
+     "amount": -171.46
+    },
+    {
+     "date": "2019-11-13",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 1400.0,
+     "balance": 3832.69,
+     "amount": 1400.0
+    },
+    {
+     "date": "2019-11-13",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 4.25,
+     "credit": 0.0,
+     "balance": 3828.44,
+     "amount": -4.25
+    },
+    {
+     "date": "2019-11-15",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 26.0,
+     "credit": 0.0,
+     "balance": 3802.44,
+     "amount": -26.0
+    },
+    {
+     "date": "2019-11-18",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 12.0,
+     "balance": 3814.44,
+     "amount": 12.0
+    },
+    {
+     "date": "2019-11-18",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 14.17,
+     "credit": 0.0,
+     "balance": 3800.27,
+     "amount": -14.17
+    },
+    {
+     "date": "2019-11-18",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 3.08,
+     "credit": 0.0,
+     "balance": 3797.19,
+     "amount": -3.08
+    },
+    {
+     "date": "2019-11-20",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 10.81,
+     "credit": 0.0,
+     "balance": 3786.38,
+     "amount": -10.81
+    },
+    {
+     "date": "2019-11-22",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 10.0,
+     "credit": 0.0,
+     "balance": 3774.25,
+     "amount": -10.0
+    },
+    {
+     "date": "2019-11-22",
+     "category": "Entertainment & Subscriptions",
+     "description": "會員訂閱",
+     "expense": 2.13,
+     "credit": 0.0,
+     "balance": 3784.25,
+     "amount": -2.13
+    },
+    {
+     "date": "2019-11-25",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 10.0,
+     "balance": 3784.25,
+     "amount": 10.0
+    },
+    {
+     "date": "2019-11-25",
+     "category": "Credits / Funding",
+     "description": "商家退款／調整",
+     "expense": 0.0,
+     "credit": 2.13,
+     "balance": 3786.38,
+     "amount": 2.13
+    },
+    {
+     "date": "2019-11-25",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 8.65,
+     "credit": 0.0,
+     "balance": 3777.73,
+     "amount": -8.65
+    },
+    {
+     "date": "2019-11-25",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 14.29,
+     "credit": 0.0,
+     "balance": 3763.44,
+     "amount": -14.29
+    },
+    {
+     "date": "2019-11-27",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 20.55,
+     "credit": 0.0,
+     "balance": 3742.89,
+     "amount": -20.55
+    },
+    {
+     "date": "2019-11-27",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 2.25,
+     "credit": 0.0,
+     "balance": 3740.64,
+     "amount": -2.25
+    },
+    {
+     "date": "2019-11-29",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 12.13,
+     "credit": 0.0,
+     "balance": 3680.11,
+     "amount": -12.13
+    },
+    {
+     "date": "2019-11-29",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 8.45,
+     "credit": 0.0,
+     "balance": 3671.66,
+     "amount": -8.45
+    },
+    {
+     "date": "2019-11-29",
+     "category": "Entertainment & Subscriptions",
+     "description": "影音／遊戲／電影",
+     "expense": 11.88,
+     "credit": 0.0,
+     "balance": 3708.33,
+     "amount": -11.88
+    },
+    {
+     "date": "2019-11-29",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 16.09,
+     "credit": 0.0,
+     "balance": 3692.24,
+     "amount": -16.09
+    },
+    {
+     "date": "2019-11-29",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 69.64,
+     "credit": 0.0,
+     "balance": 3602.02,
+     "amount": -69.64
+    },
+    {
+     "date": "2019-11-29",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 20.43,
+     "credit": 0.0,
+     "balance": 3720.21,
+     "amount": -20.43
+    },
+    {
+     "date": "2019-12-02",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 500.0,
+     "credit": 0.0,
+     "balance": 3024.56,
+     "amount": -500.0
+    },
+    {
+     "date": "2019-12-02",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 13.73,
+     "credit": 0.0,
+     "balance": 3588.29,
+     "amount": -13.73
+    },
+    {
+     "date": "2019-12-02",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 30.0,
+     "credit": 0.0,
+     "balance": 3553.7,
+     "amount": -30.0
+    },
+    {
+     "date": "2019-12-02",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 29.14,
+     "credit": 0.0,
+     "balance": 3524.56,
+     "amount": -29.14
+    },
+    {
+     "date": "2019-12-02",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 4.59,
+     "credit": 0.0,
+     "balance": 3583.7,
+     "amount": -4.59
+    },
+    {
+     "date": "2019-12-03",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 103.0,
+     "credit": 0.0,
+     "balance": 2921.56,
+     "amount": -103.0
+    },
+    {
+     "date": "2019-12-03",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 11.28,
+     "credit": 0.0,
+     "balance": 2910.28,
+     "amount": -11.28
+    },
+    {
+     "date": "2019-12-04",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 29.14,
+     "credit": 0.0,
+     "balance": 2910.28,
+     "amount": -29.14
+    },
+    {
+     "date": "2019-12-04",
+     "category": "Credits / Funding",
+     "description": "商家退款／調整",
+     "expense": 0.0,
+     "credit": 29.14,
+     "balance": 2939.42,
+     "amount": 29.14
+    },
+    {
+     "date": "2019-12-05",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 28.75,
+     "credit": 0.0,
+     "balance": 2881.53,
+     "amount": -28.75
+    },
+    {
+     "date": "2019-12-06",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 15.99,
+     "credit": 0.0,
+     "balance": 2865.54,
+     "amount": -15.99
+    },
+    {
+     "date": "2019-12-09",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 6.21,
+     "credit": 0.0,
+     "balance": 2859.33,
+     "amount": -6.21
+    },
+    {
+     "date": "2019-12-09",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 7.5,
+     "credit": 0.0,
+     "balance": 2851.83,
+     "amount": -7.5
+    },
+    {
+     "date": "2019-12-09",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 11.19,
+     "credit": 0.0,
+     "balance": 2840.64,
+     "amount": -11.19
+    },
+    {
+     "date": "2019-12-10",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 11.18,
+     "credit": 0.0,
+     "balance": 2829.46,
+     "amount": -11.18
+    },
+    {
+     "date": "2019-12-11",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 5.12,
+     "credit": 0.0,
+     "balance": 2824.34,
+     "amount": -5.12
+    },
+    {
+     "date": "2019-12-11",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 4.38,
+     "credit": 0.0,
+     "balance": 2819.96,
+     "amount": -4.38
+    },
+    {
+     "date": "2019-12-12",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 700.0,
+     "balance": 3519.96,
+     "amount": 700.0
+    },
+    {
+     "date": "2019-12-13",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 700.0,
+     "balance": 4219.96,
+     "amount": 700.0
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 1000.0,
+     "balance": 5219.96,
+     "amount": 1000.0
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 100.0,
+     "balance": 5319.96,
+     "amount": 100.0
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 4.38,
+     "credit": 0.0,
+     "balance": 5315.58,
+     "amount": -4.38
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 3.74,
+     "credit": 0.0,
+     "balance": 5293.32,
+     "amount": -3.74
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 6.2,
+     "credit": 0.0,
+     "balance": 5287.12,
+     "amount": -6.2
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 5.71,
+     "credit": 0.0,
+     "balance": 5281.41,
+     "amount": -5.71
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 5.62,
+     "credit": 0.0,
+     "balance": 5264.75,
+     "amount": -5.62
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 6.91,
+     "credit": 0.0,
+     "balance": 5217.32,
+     "amount": -6.91
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 5.35,
+     "credit": 0.0,
+     "balance": 5303.0,
+     "amount": -5.35
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 51.95,
+     "credit": 0.0,
+     "balance": 5165.37,
+     "amount": -51.95
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 15.52,
+     "credit": 0.0,
+     "balance": 5224.23,
+     "amount": -15.52
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 7.23,
+     "credit": 0.0,
+     "balance": 5308.35,
+     "amount": -7.23
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 5.94,
+     "credit": 0.0,
+     "balance": 5297.06,
+     "amount": -5.94
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 5.63,
+     "credit": 0.0,
+     "balance": 5275.78,
+     "amount": -5.63
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 5.41,
+     "credit": 0.0,
+     "balance": 5270.37,
+     "amount": -5.41
+    },
+    {
+     "date": "2019-12-16",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 25.0,
+     "credit": 0.0,
+     "balance": 5239.75,
+     "amount": -25.0
+    },
+    {
+     "date": "2019-12-17",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 19.11,
+     "credit": 0.0,
+     "balance": 5146.26,
+     "amount": -19.11
+    },
+    {
+     "date": "2019-12-18",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 13.08,
+     "credit": 0.0,
+     "balance": 5133.18,
+     "amount": -13.08
+    },
+    {
+     "date": "2019-12-20",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 7.39,
+     "credit": 0.0,
+     "balance": 5125.79,
+     "amount": -7.39
+    },
+    {
+     "date": "2019-12-23",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 12.52,
+     "credit": 0.0,
+     "balance": 5113.27,
+     "amount": -12.52
+    },
+    {
+     "date": "2019-12-23",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 59.04,
+     "credit": 0.0,
+     "balance": 5050.08,
+     "amount": -59.04
+    },
+    {
+     "date": "2019-12-23",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 5.0,
+     "credit": 0.0,
+     "balance": 5045.08,
+     "amount": -5.0
+    },
+    {
+     "date": "2019-12-23",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 5.99,
+     "credit": 0.0,
+     "balance": 5039.09,
+     "amount": -5.99
+    },
+    {
+     "date": "2019-12-23",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 4.15,
+     "credit": 0.0,
+     "balance": 5109.12,
+     "amount": -4.15
+    },
+    {
+     "date": "2019-12-26",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 5.23,
+     "credit": 0.0,
+     "balance": 5033.86,
+     "amount": -5.23
+    },
+    {
+     "date": "2019-12-30",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 29.49,
+     "credit": 0.0,
+     "balance": 4952.93,
+     "amount": -29.49
+    },
+    {
+     "date": "2019-12-30",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 12.0,
+     "credit": 0.0,
+     "balance": 4940.93,
+     "amount": -12.0
+    },
+    {
+     "date": "2019-12-30",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 4.92,
+     "credit": 0.0,
+     "balance": 4982.42,
+     "amount": -4.92
+    },
+    {
+     "date": "2019-12-30",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 4.92,
+     "credit": 0.0,
+     "balance": 5028.94,
+     "amount": -4.92
+    },
+    {
+     "date": "2019-12-30",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 41.6,
+     "credit": 0.0,
+     "balance": 4987.34,
+     "amount": -41.6
+    },
+    {
+     "date": "2019-12-31",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 13.95,
+     "credit": 0.0,
+     "balance": 4926.98,
+     "amount": -13.95
+    }
+   ]
+  },
+  {
+   "year": "2020",
+   "summary": {
+    "total_expense": 40549.92,
+    "total_credit": 70923.55,
+    "net": 30373.63,
+    "count": 85,
+    "end_balance": 30373.63
+   },
+   "categories": [
+    {
+     "name": "Tuition & Education",
+     "total": 20190.0,
+     "count": 4,
+     "share": 0.4979
+    },
+    {
+     "name": "Personal Transfers",
+     "total": 17908.75,
+     "count": 24,
+     "share": 0.4416
+    },
+    {
+     "name": "Housing & HOA",
+     "total": 1303.97,
+     "count": 7,
+     "share": 0.0322
+    },
+    {
+     "name": "Shopping",
+     "total": 576.67,
+     "count": 9,
+     "share": 0.0142
+    },
+    {
+     "name": "Cash Withdrawal",
+     "total": 200.0,
+     "count": 1,
+     "share": 0.0049
+    },
+    {
+     "name": "Dining & Food",
+     "total": 145.22,
+     "count": 10,
+     "share": 0.0036
+    },
+    {
+     "name": "Postal & Shipping",
+     "total": 73.25,
+     "count": 1,
+     "share": 0.0018
+    },
+    {
+     "name": "Fees & Banking",
+     "total": 50.95,
+     "count": 5,
+     "share": 0.0013
+    },
+    {
+     "name": "Travel & Transportation",
+     "total": 48.76,
+     "count": 4,
+     "share": 0.0012
+    },
+    {
+     "name": "Groceries & Daily",
+     "total": 34.35,
+     "count": 1,
+     "share": 0.0008
+    },
+    {
+     "name": "Personal Care",
+     "total": 18.0,
+     "count": 1,
+     "share": 0.0004
+    }
+   ],
+   "months": [
+    {
+     "month": "2020-01",
+     "expense": 1944.61,
+     "credit": 6386.43
+    },
+    {
+     "month": "2020-02",
+     "expense": 1187.92,
+     "credit": 1400.0
+    },
+    {
+     "month": "2020-03",
+     "expense": 6197.8,
+     "credit": 22137.43
+    },
+    {
+     "month": "2020-04",
+     "expense": 709.67,
+     "credit": 4764.68
+    },
+    {
+     "month": "2020-05",
+     "expense": 0.0,
+     "credit": 1565.0
+    },
+    {
+     "month": "2020-06",
+     "expense": 164.5,
+     "credit": 0.01
+    },
+    {
+     "month": "2020-07",
+     "expense": 191.97,
+     "credit": 1565.0
+    },
+    {
+     "month": "2020-08",
+     "expense": 20167.5,
+     "credit": 1565.0
+    },
+    {
+     "month": "2020-09",
+     "expense": 164.5,
+     "credit": 1565.0
+    },
+    {
+     "month": "2020-10",
+     "expense": 164.5,
+     "credit": 0.0
+    },
+    {
+     "month": "2020-11",
+     "expense": 4360.5,
+     "credit": 0.0
+    },
+    {
+     "month": "2020-12",
+     "expense": 5296.45,
+     "credit": 29975.0
+    }
+   ],
+   "records": [
+    {
+     "date": "2020-01-02",
+     "category": "Credits / Funding",
+     "description": "2020七月開始",
+     "expense": 0.0,
+     "credit": 4926.98,
+     "balance": 4926.98,
+     "amount": 4926.98
+    },
+    {
+     "date": "2020-01-02",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 10.45,
+     "credit": 0.0,
+     "balance": 4916.53,
+     "amount": -10.45
+    },
+    {
+     "date": "2020-01-03",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 31.0,
+     "credit": 0.0,
+     "balance": 4885.53,
+     "amount": -31.0
+    },
+    {
+     "date": "2020-01-03",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 4.97,
+     "credit": 0.0,
+     "balance": 4880.56,
+     "amount": -4.97
+    },
+    {
+     "date": "2020-01-06",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 500.0,
+     "credit": 0.0,
+     "balance": 4331.53,
+     "amount": -500.0
+    },
+    {
+     "date": "2020-01-06",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 20.0,
+     "credit": 0.0,
+     "balance": 4257.75,
+     "amount": -20.0
+    },
+    {
+     "date": "2020-01-06",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 49.03,
+     "credit": 0.0,
+     "balance": 4831.53,
+     "amount": -49.03
+    },
+    {
+     "date": "2020-01-06",
+     "category": "Travel & Transportation",
+     "description": "訂票／旅遊",
+     "expense": 30.0,
+     "credit": 0.0,
+     "balance": 4282.25,
+     "amount": -30.0
+    },
+    {
+     "date": "2020-01-06",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 19.28,
+     "credit": 0.0,
+     "balance": 4312.25,
+     "amount": -19.28
+    },
+    {
+     "date": "2020-01-06",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 4.5,
+     "credit": 0.0,
+     "balance": 4277.75,
+     "amount": -4.5
+    },
+    {
+     "date": "2020-01-07",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 7.1,
+     "credit": 0.0,
+     "balance": 4250.65,
+     "amount": -7.1
+    },
+    {
+     "date": "2020-01-10",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 12.13,
+     "credit": 0.0,
+     "balance": 4238.52,
+     "amount": -12.13
+    },
+    {
+     "date": "2020-01-13",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 1400.0,
+     "balance": 5638.52,
+     "amount": 1400.0
+    },
+    {
+     "date": "2020-01-13",
+     "category": "Personal Care",
+     "description": "理髮／美容",
+     "expense": 18.0,
+     "credit": 0.0,
+     "balance": 5617.27,
+     "amount": -18.0
+    },
+    {
+     "date": "2020-01-13",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 3.25,
+     "credit": 0.0,
+     "balance": 5635.27,
+     "amount": -3.25
+    },
+    {
+     "date": "2020-01-14",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 2.0,
+     "credit": 0.0,
+     "balance": 5615.27,
+     "amount": -2.0
+    },
+    {
+     "date": "2020-01-17",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 17.27,
+     "credit": 0.0,
+     "balance": 5598.0,
+     "amount": -17.27
+    },
+    {
+     "date": "2020-01-21",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 70.0,
+     "credit": 0.0,
+     "balance": 5539.66,
+     "amount": -70.0
+    },
+    {
+     "date": "2020-01-21",
+     "category": "Travel & Transportation",
+     "description": "加油／便利商店",
+     "expense": 5.94,
+     "credit": 0.0,
+     "balance": 5609.66,
+     "amount": -5.94
+    },
+    {
+     "date": "2020-01-21",
+     "category": "Credits / Funding",
+     "description": "商家退款／調整",
+     "expense": 0.0,
+     "credit": 51.95,
+     "balance": 5649.95,
+     "amount": 51.95
+    },
+    {
+     "date": "2020-01-21",
+     "category": "Groceries & Daily",
+     "description": "食品雜貨／便利商店",
+     "expense": 34.35,
+     "credit": 0.0,
+     "balance": 5615.6,
+     "amount": -34.35
+    },
+    {
+     "date": "2020-01-22",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 7.5,
+     "balance": 5547.16,
+     "amount": 7.5
+    },
+    {
+     "date": "2020-01-24",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 6.79,
+     "credit": 0.0,
+     "balance": 5540.37,
+     "amount": -6.79
+    },
+    {
+     "date": "2020-01-27",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 500.0,
+     "credit": 0.0,
+     "balance": 4982.51,
+     "amount": -500.0
+    },
+    {
+     "date": "2020-01-27",
+     "category": "Travel & Transportation",
+     "description": "叫車／大眾運輸",
+     "expense": 5.72,
+     "credit": 0.0,
+     "balance": 5482.51,
+     "amount": -5.72
+    },
+    {
+     "date": "2020-01-27",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 52.14,
+     "credit": 0.0,
+     "balance": 5488.23,
+     "amount": -52.14
+    },
+    {
+     "date": "2020-01-27",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 17.14,
+     "credit": 0.0,
+     "balance": 4965.37,
+     "amount": -17.14
+    },
+    {
+     "date": "2020-01-29",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 482.86,
+     "credit": 0.0,
+     "balance": 4482.51,
+     "amount": -482.86
+    },
+    {
+     "date": "2020-01-30",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 16.03,
+     "credit": 0.0,
+     "balance": 4466.48,
+     "amount": -16.03
+    },
+    {
+     "date": "2020-01-30",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 24.66,
+     "credit": 0.0,
+     "balance": 4441.82,
+     "amount": -24.66
+    },
+    {
+     "date": "2020-02-03",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 500.0,
+     "credit": 0.0,
+     "balance": 3927.46,
+     "amount": -500.0
+    },
+    {
+     "date": "2020-02-03",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 14.36,
+     "credit": 0.0,
+     "balance": 4427.46,
+     "amount": -14.36
+    },
+    {
+     "date": "2020-02-05",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 317.4,
+     "credit": 0.0,
+     "balance": 3610.06,
+     "amount": -317.4
+    },
+    {
+     "date": "2020-02-10",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 300.0,
+     "credit": 0.0,
+     "balance": 3310.06,
+     "amount": -300.0
+    },
+    {
+     "date": "2020-02-11",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 700.0,
+     "balance": 4010.06,
+     "amount": 700.0
+    },
+    {
+     "date": "2020-02-13",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 700.0,
+     "balance": 4710.06,
+     "amount": 700.0
+    },
+    {
+     "date": "2020-02-27",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 44.22,
+     "credit": 0.0,
+     "balance": 4665.84,
+     "amount": -44.22
+    },
+    {
+     "date": "2020-02-28",
+     "category": "Dining & Food",
+     "description": "餐廳／外送／飲料",
+     "expense": 11.94,
+     "credit": 0.0,
+     "balance": 4653.9,
+     "amount": -11.94
+    },
+    {
+     "date": "2020-03-02",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 1.0,
+     "credit": 0.0,
+     "balance": 4652.9,
+     "amount": -1.0
+    },
+    {
+     "date": "2020-03-02",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 298.0,
+     "credit": 0.0,
+     "balance": 4354.9,
+     "amount": -298.0
+    },
+    {
+     "date": "2020-03-02",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 500.0,
+     "credit": 0.0,
+     "balance": 3854.9,
+     "amount": -500.0
+    },
+    {
+     "date": "2020-03-02",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 1.0,
+     "credit": 0.0,
+     "balance": 3853.9,
+     "amount": -1.0
+    },
+    {
+     "date": "2020-03-04",
+     "category": "Credits / Funding",
+     "description": "海外／家庭支援",
+     "expense": 0.0,
+     "credit": 20000.0,
+     "balance": 23853.9,
+     "amount": 20000.0
+    },
+    {
+     "date": "2020-03-04",
+     "category": "Fees & Banking",
+     "description": "銀行／匯款手續費",
+     "expense": 15.0,
+     "credit": 0.0,
+     "balance": 23838.9,
+     "amount": -15.0
+    },
+    {
+     "date": "2020-03-05",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 1.0,
+     "credit": 0.0,
+     "balance": 23837.9,
+     "amount": -1.0
+    },
+    {
+     "date": "2020-03-05",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 3499.0,
+     "credit": 0.0,
+     "balance": 20338.9,
+     "amount": -3499.0
+    },
+    {
+     "date": "2020-03-06",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 1500.0,
+     "credit": 0.0,
+     "balance": 18838.9,
+     "amount": -1500.0
+    },
+    {
+     "date": "2020-03-11",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 1400.0,
+     "balance": 20238.9,
+     "amount": 1400.0
+    },
+    {
+     "date": "2020-03-16",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 107.5,
+     "balance": 20346.4,
+     "amount": 107.5
+    },
+    {
+     "date": "2020-03-17",
+     "category": "Postal & Shipping",
+     "description": "校園郵務",
+     "expense": 73.25,
+     "credit": 0.0,
+     "balance": 20165.65,
+     "amount": -73.25
+    },
+    {
+     "date": "2020-03-17",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 107.5,
+     "credit": 0.0,
+     "balance": 20238.9,
+     "amount": -107.5
+    },
+    {
+     "date": "2020-03-23",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 629.93,
+     "balance": 20795.58,
+     "amount": 629.93
+    },
+    {
+     "date": "2020-03-27",
+     "category": "Shopping",
+     "description": "網購／服飾／零售",
+     "expense": 2.05,
+     "credit": 0.0,
+     "balance": 20793.53,
+     "amount": -2.05
+    },
+    {
+     "date": "2020-03-30",
+     "category": "Cash Withdrawal",
+     "description": "ATM 提領",
+     "expense": 200.0,
+     "credit": 0.0,
+     "balance": 20593.53,
+     "amount": -200.0
+    },
+    {
+     "date": "2020-04-06",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 165.0,
+     "credit": 0.0,
+     "balance": 20428.53,
+     "amount": -165.0
+    },
+    {
+     "date": "2020-04-06",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 191.47,
+     "credit": 0.0,
+     "balance": 20237.06,
+     "amount": -191.47
+    },
+    {
+     "date": "2020-04-13",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 1565.0,
+     "balance": 21802.06,
+     "amount": 1565.0
+    },
+    {
+     "date": "2020-04-13",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 37.2,
+     "credit": 0.0,
+     "balance": 21764.86,
+     "amount": -37.2
+    },
+    {
+     "date": "2020-04-20",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 300.0,
+     "credit": 0.0,
+     "balance": 21464.86,
+     "amount": -300.0
+    },
+    {
+     "date": "2020-04-29",
+     "category": "Credits / Funding",
+     "description": "刷卡退款",
+     "expense": 0.0,
+     "credit": 3199.68,
+     "balance": 24664.54,
+     "amount": 3199.68
+    },
+    {
+     "date": "2020-04-29",
+     "category": "Fees & Banking",
+     "description": "銀行／匯款手續費",
+     "expense": 16.0,
+     "credit": 0.0,
+     "balance": 24648.54,
+     "amount": -16.0
+    },
+    {
+     "date": "2020-05-12",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 1565.0,
+     "balance": 26213.54,
+     "amount": 1565.0
+    },
+    {
+     "date": "2020-06-10",
+     "category": "Credits / Funding",
+     "description": "刷卡退款",
+     "expense": 0.0,
+     "credit": 0.01,
+     "balance": 26213.55,
+     "amount": 0.01
+    },
+    {
+     "date": "2020-06-22",
+     "category": "Housing & HOA",
+     "description": "房租／住宿",
+     "expense": 164.5,
+     "credit": 0.0,
+     "balance": 26049.05,
+     "amount": -164.5
+    },
+    {
+     "date": "2020-07-13",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 1565.0,
+     "balance": 27614.05,
+     "amount": 1565.0
+    },
+    {
+     "date": "2020-07-20",
+     "category": "Housing & HOA",
+     "description": "房租／住宿",
+     "expense": 191.97,
+     "credit": 0.0,
+     "balance": 27422.08,
+     "amount": -191.97
+    },
+    {
+     "date": "2020-08-04",
+     "category": "Housing & HOA",
+     "description": "房租／住宿",
+     "expense": 164.5,
+     "credit": 0.0,
+     "balance": 27257.58,
+     "amount": -164.5
+    },
+    {
+     "date": "2020-08-10",
+     "category": "Tuition & Education",
+     "description": "學校／申請／學費",
+     "expense": 20000.0,
+     "credit": 0.0,
+     "balance": 7257.58,
+     "amount": -20000.0
+    },
+    {
+     "date": "2020-08-11",
+     "category": "Fees & Banking",
+     "description": "銀行／匯款手續費",
+     "expense": 3.0,
+     "credit": 0.0,
+     "balance": 7254.58,
+     "amount": -3.0
+    },
+    {
+     "date": "2020-08-12",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 1565.0,
+     "balance": 8819.58,
+     "amount": 1565.0
+    },
+    {
+     "date": "2020-09-03",
+     "category": "Housing & HOA",
+     "description": "房租／住宿",
+     "expense": 164.5,
+     "credit": 0.0,
+     "balance": 8655.08,
+     "amount": -164.5
+    },
+    {
+     "date": "2020-09-28",
+     "category": "Credits / Funding",
+     "description": "Venmo 提領",
+     "expense": 0.0,
+     "credit": 1565.0,
+     "balance": 10220.08,
+     "amount": 1565.0
+    },
+    {
+     "date": "2020-10-06",
+     "category": "Housing & HOA",
+     "description": "房租／住宿",
+     "expense": 164.5,
+     "credit": 0.0,
+     "balance": 10055.58,
+     "amount": -164.5
+    },
+    {
+     "date": "2020-11-04",
+     "category": "Housing & HOA",
+     "description": "房租／住宿",
+     "expense": 364.5,
+     "credit": 0.0,
+     "balance": 9691.08,
+     "amount": -364.5
+    },
+    {
+     "date": "2020-11-12",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 3996.0,
+     "credit": 0.0,
+     "balance": 5695.08,
+     "amount": -3996.0
+    },
+    {
+     "date": "2020-12-09",
+     "category": "Housing & HOA",
+     "description": "房租／住宿",
+     "expense": 89.5,
+     "credit": 0.0,
+     "balance": 5605.58,
+     "amount": -89.5
+    },
+    {
+     "date": "2020-12-16",
+     "category": "Tuition & Education",
+     "description": "學校／申請／學費",
+     "expense": 35.0,
+     "credit": 0.0,
+     "balance": 5570.58,
+     "amount": -35.0
+    },
+    {
+     "date": "2020-12-17",
+     "category": "Tuition & Education",
+     "description": "學校／申請／學費",
+     "expense": 90.0,
+     "credit": 0.0,
+     "balance": 5480.58,
+     "amount": -90.0
+    },
+    {
+     "date": "2020-12-18",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 1500.0,
+     "credit": 0.0,
+     "balance": 33955.58,
+     "amount": -1500.0
+    },
+    {
+     "date": "2020-12-18",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 1.0,
+     "credit": 0.0,
+     "balance": 33954.58,
+     "amount": -1.0
+    },
+    {
+     "date": "2020-12-18",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 3499.0,
+     "credit": 0.0,
+     "balance": 30455.58,
+     "amount": -3499.0
+    },
+    {
+     "date": "2020-12-18",
+     "category": "Credits / Funding",
+     "description": "海外／家庭支援",
+     "expense": 0.0,
+     "credit": 29975.0,
+     "balance": 35455.58,
+     "amount": 29975.0
+    },
+    {
+     "date": "2020-12-18",
+     "category": "Fees & Banking",
+     "description": "銀行／匯款手續費",
+     "expense": 15.0,
+     "credit": 0.0,
+     "balance": 30440.58,
+     "amount": -15.0
+    },
+    {
+     "date": "2020-12-30",
+     "category": "Tuition & Education",
+     "description": "學校／申請／學費",
+     "expense": 65.0,
+     "credit": 0.0,
+     "balance": 30375.58,
+     "amount": -65.0
+    },
+    {
+     "date": "2020-12-30",
+     "category": "Fees & Banking",
+     "description": "銀行／匯款手續費",
+     "expense": 1.95,
+     "credit": 0.0,
+     "balance": 30373.63,
+     "amount": -1.95
+    }
+   ]
+  },
+  {
    "year": "2021",
    "summary": {
-    "total_expense": 70008.87,
-    "total_credit": 90722.05,
-    "net": 20713.18,
-    "count": 55,
+    "total_expense": 76423.5,
+    "total_credit": 66581.05,
+    "net": -9842.45,
+    "count": 71,
     "end_balance": 20622.69
    },
    "categories": [
@@ -17,68 +2260,104 @@ window.CARD_DATA = {
      "name": "Travel & Transportation",
      "total": 26475.71,
      "count": 7,
-     "share": 0.3782
+     "share": 0.3464
     },
     {
      "name": "Tuition & Education",
-     "total": 16082.92,
-     "count": 7,
-     "share": 0.2297
+     "total": 16549.8,
+     "count": 13,
+     "share": 0.2166
     },
     {
      "name": "Monthly Support",
      "total": 16078.5,
      "count": 6,
-     "share": 0.2297
+     "share": 0.2104
     },
     {
      "name": "Housing & HOA",
-     "total": 6475.35,
-     "count": 10,
-     "share": 0.0925
+     "total": 7385.35,
+     "count": 15,
+     "share": 0.0966
+    },
+    {
+     "name": "Personal Transfers",
+     "total": 5032.5,
+     "count": 3,
+     "share": 0.0659
     },
     {
      "name": "Insurance & Medical",
      "total": 2448.0,
      "count": 2,
-     "share": 0.035
+     "share": 0.032
     },
     {
      "name": "Household & Repairs",
      "total": 1317.48,
      "count": 8,
-     "share": 0.0188
+     "share": 0.0172
     },
     {
      "name": "Utilities, Phone & Internet",
      "total": 954.12,
      "count": 5,
-     "share": 0.0136
+     "share": 0.0125
     },
     {
      "name": "Gifts & Family",
      "total": 85.79,
      "count": 1,
-     "share": 0.0012
+     "share": 0.0011
     },
     {
      "name": "Other / Unclassified",
      "total": 61.0,
      "count": 1,
-     "share": 0.0009
+     "share": 0.0008
     },
     {
      "name": "Fees & Banking",
-     "total": 30.0,
-     "count": 2,
-     "share": 0.0004
+     "total": 35.25,
+     "count": 5,
+     "share": 0.0005
     }
    ],
    "months": [
     {
+     "month": "2021-01",
+     "expense": 362.25,
+     "credit": 0.0
+    },
+    {
+     "month": "2021-02",
+     "expense": 217.0,
+     "credit": 0.0
+    },
+    {
+     "month": "2021-03",
+     "expense": 5182.0,
+     "credit": 0.0
+    },
+    {
+     "month": "2021-04",
+     "expense": 438.88,
+     "credit": 0.0
+    },
+    {
+     "month": "2021-05",
+     "expense": 214.5,
+     "credit": 0.0
+    },
+    {
+     "month": "2021-06",
+     "expense": 182.0,
+     "credit": 0.0
+    },
+    {
      "month": "2021-07",
-     "expense": 11950.0,
-     "credit": 24141.0
+     "expense": 11768.0,
+     "credit": 0.0
     },
     {
      "month": "2021-08",
@@ -108,16 +2387,160 @@ window.CARD_DATA = {
    ],
    "records": [
     {
-     "date": "2021-07-03",
-     "category": "Credits / Funding",
-     "description": "2020七月開始",
-     "expense": 0.0,
-     "credit": 24141.0,
-     "balance": 23959.0,
-     "amount": 24141.0
+     "date": "2021-01-04",
+     "category": "Tuition & Education",
+     "description": "學校／申請／學費",
+     "expense": 50.0,
+     "credit": 0.0,
+     "balance": 30373.63,
+     "amount": -50.0
     },
     {
-     "date": "2021-07-03",
+     "date": "2021-01-04",
+     "category": "Tuition & Education",
+     "description": "學校／申請／學費",
+     "expense": 50.0,
+     "credit": 0.0,
+     "balance": 30323.63,
+     "amount": -50.0
+    },
+    {
+     "date": "2021-01-04",
+     "category": "Tuition & Education",
+     "description": "學校／申請／學費",
+     "expense": 75.0,
+     "credit": 0.0,
+     "balance": 30273.63,
+     "amount": -75.0
+    },
+    {
+     "date": "2021-01-04",
+     "category": "Fees & Banking",
+     "description": "銀行／匯款手續費",
+     "expense": 2.25,
+     "credit": 0.0,
+     "balance": 30198.63,
+     "amount": -2.25
+    },
+    {
+     "date": "2021-01-04",
+     "category": "Fees & Banking",
+     "description": "銀行／匯款手續費",
+     "expense": 1.5,
+     "credit": 0.0,
+     "balance": 30196.38,
+     "amount": -1.5
+    },
+    {
+     "date": "2021-01-04",
+     "category": "Fees & Banking",
+     "description": "銀行／匯款手續費",
+     "expense": 1.5,
+     "credit": 0.0,
+     "balance": 30194.88,
+     "amount": -1.5
+    },
+    {
+     "date": "2021-01-05",
+     "category": "Housing & HOA",
+     "description": "房租／住宿",
+     "expense": 182.0,
+     "credit": 0.0,
+     "balance": 30193.38,
+     "amount": -182.0
+    },
+    {
+     "date": "2021-02-12",
+     "category": "Housing & HOA",
+     "description": "房租／住宿",
+     "expense": 182.0,
+     "credit": 0.0,
+     "balance": 30011.38,
+     "amount": -182.0
+    },
+    {
+     "date": "2021-02-18",
+     "category": "Tuition & Education",
+     "description": "學校／申請／學費",
+     "expense": 35.0,
+     "credit": 0.0,
+     "balance": 29829.38,
+     "amount": -35.0
+    },
+    {
+     "date": "2021-03-04",
+     "category": "Housing & HOA",
+     "description": "房租／住宿",
+     "expense": 182.0,
+     "credit": 0.0,
+     "balance": 29794.38,
+     "amount": -182.0
+    },
+    {
+     "date": "2021-03-10",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 3500.0,
+     "credit": 0.0,
+     "balance": 29612.38,
+     "amount": -3500.0
+    },
+    {
+     "date": "2021-03-17",
+     "category": "Personal Transfers",
+     "description": "個人轉帳",
+     "expense": 1500.0,
+     "credit": 0.0,
+     "balance": 26112.38,
+     "amount": -1500.0
+    },
+    {
+     "date": "2021-04-05",
+     "category": "Housing & HOA",
+     "description": "房租／管理費",
+     "expense": 182.0,
+     "credit": 0.0,
+     "balance": 24612.38,
+     "amount": -182.0
+    },
+    {
+     "date": "2021-04-08",
+     "category": "Tuition & Education",
+     "description": "學校／申請／學費",
+     "expense": 250.0,
+     "credit": 0.0,
+     "balance": 24430.38,
+     "amount": -250.0
+    },
+    {
+     "date": "2021-04-08",
+     "category": "Tuition & Education",
+     "description": "學校／申請／學費",
+     "expense": 6.88,
+     "credit": 0.0,
+     "balance": 24180.38,
+     "amount": -6.88
+    },
+    {
+     "date": "2021-05-05",
+     "category": "Housing & HOA",
+     "description": "房租／管理費",
+     "expense": 182.0,
+     "credit": 0.0,
+     "balance": 24173.5,
+     "amount": -182.0
+    },
+    {
+     "date": "2021-05-20",
+     "category": "Personal Transfers",
+     "description": "電子錢包轉帳",
+     "expense": 32.5,
+     "credit": 0.0,
+     "balance": 23991.5,
+     "amount": -32.5
+    },
+    {
+     "date": "2021-06-03",
      "category": "Housing & HOA",
      "description": "6月管理費",
      "expense": 182.0,

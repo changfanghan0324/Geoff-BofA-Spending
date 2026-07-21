@@ -46,6 +46,35 @@ KW = {
 }
 
 
+# 分類正規化：把 2019~2021 的中文分類，對應到 2022~2026 使用的英文分類。
+# 沒有現成對應的（餐飲、購物…）給一個新的英文正規名，前端會再翻成中文並標注僅 2019~2021。
+CATEGORY_MAP = {
+    # —— 直接併入既有分類 ——
+    "教育": "Tuition & Education",
+    "交通": "Travel & Transportation",
+    "旅遊": "Travel & Transportation",
+    "住房": "Housing & HOA",
+    "手續費": "Fees & Banking",
+    "轉帳入金": "Credits / Funding",
+    "匯款入金": "Credits / Funding",
+    "退款": "Credits / Funding",
+    "開始": "Credits / Funding",          # 期初帳戶餘額
+    # —— 保留細節：新增分類 ——
+    "餐飲": "Dining & Food",
+    "日常採買": "Groceries & Daily",
+    "購物": "Shopping",
+    "娛樂與訂閱": "Entertainment & Subscriptions",
+    "個人照護": "Personal Care",
+    "轉帳": "Personal Transfers",           # 個人轉帳（支出）
+    "現金提領": "Cash Withdrawal",
+    "郵務": "Postal & Shipping",
+}
+
+
+def normalize_category(cat):
+    return CATEGORY_MAP.get(cat, cat)
+
+
 def _norm(s):
     return re.sub(r"\s+", "", str(s).strip().lower()) if s is not None else ""
 
@@ -143,6 +172,7 @@ def parse_sheet(ws, default_year=None):
         desc = "" if desc is None else str(desc).strip()
         cat = cell(row, "category")
         cat = "" if cat is None else str(cat).strip()
+        cat = normalize_category(cat)
 
         # 由帶正負的 Amount 推導 花費 / 入金
         if exp is None:

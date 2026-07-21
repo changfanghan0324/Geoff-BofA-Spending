@@ -52,6 +52,8 @@
   .chip .cdot{width:9px;height:9px;border-radius:3px;flex:none;transition:.15s}
   .chip.off{opacity:.4;text-decoration:line-through}
   .chip.off .cdot{background:var(--muted)!important}
+  .tag19{font-style:normal;font-size:9.5px;font-weight:700;color:var(--muted);
+    border:1px solid var(--line);border-radius:5px;padding:0 4px;margin-left:4px;letter-spacing:.3px;text-decoration:none}
 
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:20px}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:15px 16px;box-shadow:var(--shadow)}
@@ -190,6 +192,11 @@
   CATS.forEach(function(c,i){ COLOR[c.name] = PALETTE[i % PALETTE.length]; });
   function catColor(n){ return COLOR[n] || 'var(--brand)'; }
 
+  // 哪些分類只出現在 2019~2021（沒有 2022 之後的紀錄）
+  var modernCats = {};
+  D.years.forEach(function(y){ if(y.year >= '2022'){ y.records.forEach(function(r){ modernCats[r.category||'未分類']=true; }); } });
+  function isLegacy(n){ return !modernCats[n]; }
+
   // ---- 分類中文對照 ----
   var CAT_ZH = {
     'Tuition & Education':'學費與教育',
@@ -206,6 +213,18 @@
     'Household & Repairs':'家庭用品與維修',
     'Fees & Banking':'手續費與銀行',
     'Credits / Funding':'入金／資金來源',
+    'Investments & Savings':'投資與儲蓄',
+    'Taxes & Government':'稅務與政府規費',
+    'Unspecified / Forgot':'未註明／忘記',
+    // 僅 2019~2021 的分類
+    'Dining & Food':'餐飲',
+    'Groceries & Daily':'日常採買',
+    'Shopping':'購物',
+    'Entertainment & Subscriptions':'娛樂與訂閱',
+    'Personal Care':'個人照護',
+    'Personal Transfers':'個人轉帳',
+    'Cash Withdrawal':'現金提領',
+    'Postal & Shipping':'郵務',
     '未分類':'未分類'
   };
   var LANG = 'en';
@@ -263,7 +282,8 @@
     var chips = CATS.map(function(c){
       var off = !!state.excluded[c.name];
       return '<button class="chip'+(off?' off':'')+'" data-cat="'+esc(c.name)+'">'+
-        '<i class="cdot" style="background:'+catColor(c.name)+'"></i>'+esc(catLabel(c.name))+'</button>';
+        '<i class="cdot" style="background:'+catColor(c.name)+'"></i>'+esc(catLabel(c.name))+
+        (isLegacy(c.name)?'<i class="tag19" title="僅出現在 2019~2021">19–21</i>':'')+'</button>';
     }).join('');
     var ex = excludedCount();
     return '<div class="filterbar">'+
@@ -306,7 +326,7 @@
       var rows = a.cats.map(function(c){
         return '<div class="catrow click" data-cat="'+esc(c.name)+'" title="點一下可從統計中排除／加回">'+
           '<span class="cmark" style="background:'+catColor(c.name)+'"></span>'+
-          '<span class="catname">'+esc(catLabel(c.name))+'</span>'+
+          '<span class="catname">'+esc(catLabel(c.name))+(isLegacy(c.name)?' <i class="tag19">19–21</i>':'')+'</span>'+
           '<span class="catval">'+money(c.total)+' · '+(c.share*100).toFixed(1)+'% · '+c.count+'筆</span>'+
           '<div class="bar"><i data-w="'+(c.total/maxC*100)+'" style="background:'+catColor(c.name)+'"></i></div>'+
         '</div>';
@@ -355,7 +375,7 @@
       var crows = a.cats.map(function(c){
         return '<div class="catrow click" data-cat="'+esc(c.name)+'" title="點一下可排除／加回">'+
           '<span class="cmark" style="background:'+catColor(c.name)+'"></span>'+
-          '<span class="catname">'+esc(catLabel(c.name))+'</span>'+
+          '<span class="catname">'+esc(catLabel(c.name))+(isLegacy(c.name)?' <i class="tag19">19–21</i>':'')+'</span>'+
           '<span class="catval">'+money(c.total)+' · '+(c.share*100).toFixed(1)+'% · '+c.count+'筆</span>'+
           '<div class="bar"><i data-w="'+(c.total/maxC*100)+'" style="background:'+catColor(c.name)+'"></i></div>'+
         '</div>';
