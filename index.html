@@ -27,6 +27,9 @@
   header.top{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin-bottom:6px}
   header.top h1{font-size:23px;margin:0;font-weight:750;letter-spacing:.2px}
   .updated{color:var(--muted);font-size:12.5px}
+  .langbtn{margin-left:auto;border:1px solid var(--line);background:var(--panel);color:var(--ink);
+    padding:6px 14px;border-radius:999px;cursor:pointer;font-size:13px;font-weight:650;transition:.15s}
+  .langbtn:hover{border-color:var(--brand);color:var(--brand)}
 
   .tabs{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0 16px;border-bottom:1px solid var(--line);padding-bottom:14px}
   .tab{border:1px solid var(--line);background:var(--panel);color:var(--muted);
@@ -135,6 +138,7 @@
   <header class="top">
     <h1 id="title">消費紀錄</h1>
     <span class="updated" id="updated"></span>
+    <button class="langbtn" id="langbtn" type="button"></button>
   </header>
   <div class="tabs" id="tabs"></div>
   <div id="view"></div>
@@ -185,6 +189,28 @@
   var COLOR = {};
   CATS.forEach(function(c,i){ COLOR[c.name] = PALETTE[i % PALETTE.length]; });
   function catColor(n){ return COLOR[n] || 'var(--brand)'; }
+
+  // ---- 分類中文對照 ----
+  var CAT_ZH = {
+    'Tuition & Education':'學費與教育',
+    'Investments & Savings':'投資與儲蓄',
+    'Monthly Support':'每月生活費',
+    'Travel & Transportation':'旅遊與交通',
+    'Gifts & Family':'禮物與家庭',
+    'Housing & HOA':'住房與社區管理費',
+    'Utilities, Phone & Internet':'水電、電話與網路',
+    'Insurance & Medical':'保險與醫療',
+    'Taxes & Government':'稅務與政府規費',
+    'Unspecified / Forgot':'未註明／忘記',
+    'Other / Unclassified':'其他／未分類',
+    'Household & Repairs':'家庭用品與維修',
+    'Fees & Banking':'手續費與銀行',
+    'Credits / Funding':'入金／資金來源',
+    '未分類':'未分類'
+  };
+  var LANG = 'en';
+  try{ var sv=localStorage.getItem('geoff_lang'); if(sv) LANG=sv; }catch(e){}
+  function catLabel(name){ return LANG==='zh' ? (CAT_ZH[name]||name) : name; }
 
   // ---- 狀態 ----
   var state = { tab:'ALL', excluded:{}, sortKey:'date', sortDir:1 };
@@ -237,7 +263,7 @@
     var chips = CATS.map(function(c){
       var off = !!state.excluded[c.name];
       return '<button class="chip'+(off?' off':'')+'" data-cat="'+esc(c.name)+'">'+
-        '<i class="cdot" style="background:'+catColor(c.name)+'"></i>'+esc(c.name)+'</button>';
+        '<i class="cdot" style="background:'+catColor(c.name)+'"></i>'+esc(catLabel(c.name))+'</button>';
     }).join('');
     var ex = excludedCount();
     return '<div class="filterbar">'+
@@ -280,7 +306,7 @@
       var rows = a.cats.map(function(c){
         return '<div class="catrow click" data-cat="'+esc(c.name)+'" title="點一下可從統計中排除／加回">'+
           '<span class="cmark" style="background:'+catColor(c.name)+'"></span>'+
-          '<span class="catname">'+esc(c.name)+'</span>'+
+          '<span class="catname">'+esc(catLabel(c.name))+'</span>'+
           '<span class="catval">'+money(c.total)+' · '+(c.share*100).toFixed(1)+'% · '+c.count+'筆</span>'+
           '<div class="bar"><i data-w="'+(c.total/maxC*100)+'" style="background:'+catColor(c.name)+'"></i></div>'+
         '</div>';
@@ -329,7 +355,7 @@
       var crows = a.cats.map(function(c){
         return '<div class="catrow click" data-cat="'+esc(c.name)+'" title="點一下可排除／加回">'+
           '<span class="cmark" style="background:'+catColor(c.name)+'"></span>'+
-          '<span class="catname">'+esc(c.name)+'</span>'+
+          '<span class="catname">'+esc(catLabel(c.name))+'</span>'+
           '<span class="catval">'+money(c.total)+' · '+(c.share*100).toFixed(1)+'% · '+c.count+'筆</span>'+
           '<div class="bar"><i data-w="'+(c.total/maxC*100)+'" style="background:'+catColor(c.name)+'"></i></div>'+
         '</div>';
@@ -378,7 +404,7 @@
   function drawRows(recs){
     var q=(document.getElementById('q').value||'').trim().toLowerCase();
     var rows=recs.slice();
-    if(q) rows=rows.filter(function(r){ return (r.date+' '+r.category+' '+r.description).toLowerCase().indexOf(q)>=0; });
+    if(q) rows=rows.filter(function(r){ return (r.date+' '+r.category+' '+catLabel(r.category)+' '+r.description).toLowerCase().indexOf(q)>=0; });
     var k=state.sortKey, dir=state.sortDir;
     rows.sort(function(a,b){
       var va=a[k],vb=b[k];
@@ -389,7 +415,7 @@
       var col=catColor(r.category||'未分類');
       return '<tr>'+
         '<td>'+esc(r.date)+'</td>'+
-        '<td>'+(r.category?'<span class="pill"><i class="cdot" style="background:'+col+'"></i>'+esc(r.category)+'</span>':'')+'</td>'+
+        '<td>'+(r.category?'<span class="pill"><i class="cdot" style="background:'+col+'"></i>'+esc(catLabel(r.category))+'</span>':'')+'</td>'+
         '<td class="desc">'+esc(r.description)+'</td>'+
         '<td class="num exp">'+(r.expense>0?money(r.expense):'')+'</td>'+
         '<td class="num cre">'+(r.credit>0?money(r.credit):'')+'</td>'+
@@ -459,6 +485,16 @@
     animateBars();
     if(scrollTop) window.scrollTo(0,0);   // 只在切換分頁時回頂端；篩選時維持捲動位置
   }
+
+  // ---- 語言切換 ----
+  function updateLangBtn(){ document.getElementById('langbtn').textContent = (LANG==='zh' ? '🌐 EN' : '🌐 中文'); }
+  document.getElementById('langbtn').onclick=function(){
+    LANG = (LANG==='zh'?'en':'zh');
+    try{ localStorage.setItem('geoff_lang', LANG); }catch(e){}
+    updateLangBtn();
+    render(false);
+  };
+  updateLangBtn();
 
   document.getElementById('foot').innerHTML='每月由 GitHub Action 自動從 Google Sheet 更新 · 靜態網頁';
   buildTabs();
