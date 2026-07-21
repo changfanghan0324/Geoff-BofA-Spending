@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>消費紀錄</title>
+<style>
+  :root{
+    --bg:#f5f6f8; --panel:#ffffff; --ink:#1b1f27; --muted:#697086;
+    --line:#e6e8ee; --brand:#3a6df0; --brand-soft:#e9f0ff;
+    --expense:#e5484d; --credit:#2f9e5f; --shadow:0 1px 3px rgba(20,24,40,.06),0 8px 24px rgba(20,24,40,.05);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0e1116; --panel:#161b22; --ink:#e8eaed; --muted:#9aa2b1;
+      --line:#262c36; --brand:#5b8bff; --brand-soft:#1a2440;
+      --expense:#ff6b6f; --credit:#4bd07f; --shadow:0 1px 3px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:22px 18px 60px}
+  header.top{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin-bottom:6px}
+  header.top h1{font-size:22px;margin:0;font-weight:700;letter-spacing:.2px}
+  .updated{color:var(--muted);font-size:12.5px}
+  .tabs{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0 20px;border-bottom:1px solid var(--line);padding-bottom:12px}
+  .tab{border:1px solid var(--line);background:var(--panel);color:var(--muted);
+    padding:7px 15px;border-radius:999px;cursor:pointer;font-size:14px;font-weight:600;transition:.12s}
+  .tab:hover{color:var(--ink)}
+  .tab.active{background:var(--brand);border-color:var(--brand);color:#fff}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:22px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
+  .card .k{color:var(--muted);font-size:12.5px;margin-bottom:6px;font-weight:600}
+  .card .v{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:.3px}
+  .v.exp{color:var(--expense)} .v.cre{color:var(--credit)}
+  .v.pos{color:var(--credit)} .v.neg{color:var(--expense)}
+  section.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    box-shadow:var(--shadow);margin-bottom:20px;overflow:hidden}
+  .panel h2{font-size:14.5px;margin:0;padding:14px 16px;border-bottom:1px solid var(--line);font-weight:700}
+  .panel .body{padding:14px 16px}
+  /* 分類長條 */
+  .catrow{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:center;margin-bottom:11px}
+  .catrow:last-child{margin-bottom:0}
+  .catname{font-size:13.5px;font-weight:600}
+  .catval{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
+  .bar{grid-column:1/3;height:8px;background:var(--brand-soft);border-radius:999px;overflow:hidden}
+  .bar > i{display:block;height:100%;background:var(--brand);border-radius:999px}
+  /* 月趨勢 */
+  .months{display:flex;align-items:flex-end;gap:6px;height:130px;padding-top:6px;overflow-x:auto}
+  .mcol{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:3px;min-width:26px;flex:1}
+  .mbars{display:flex;align-items:flex-end;gap:2px;height:96px}
+  .mbars i{width:7px;border-radius:3px 3px 0 0;display:block}
+  .mbars .e{background:var(--expense)} .mbars .c{background:var(--credit)}
+  .mlabel{font-size:10px;color:var(--muted);white-space:nowrap}
+  .legend{display:flex;gap:16px;font-size:12px;color:var(--muted);padding:0 16px 12px}
+  .legend span{display:inline-flex;align-items:center;gap:5px}
+  .dot{width:9px;height:9px;border-radius:3px;display:inline-block}
+  /* 表格 */
+  .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line)}
+  .search{flex:1;min-width:160px;border:1px solid var(--line);background:var(--bg);color:var(--ink);
+    border-radius:9px;padding:8px 12px;font-size:14px;outline:none}
+  .search:focus{border-color:var(--brand)}
+  .count{color:var(--muted);font-size:12.5px;white-space:nowrap}
+  .tablescroll{overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{padding:9px 14px;text-align:left;white-space:nowrap;border-bottom:1px solid var(--line)}
+  th{position:sticky;top:0;background:var(--panel);color:var(--muted);font-weight:600;
+    font-size:12.5px;cursor:pointer;user-select:none;z-index:1}
+  th.num,td.num{text-align:right;font-variant-numeric:tabular-nums}
+  td.desc{white-space:normal;min-width:180px}
+  tr:hover td{background:var(--brand-soft)}
+  .pill{font-size:11.5px;color:var(--muted);background:var(--bg);border:1px solid var(--line);
+    padding:2px 8px;border-radius:999px;white-space:nowrap}
+  .num.exp{color:var(--expense)} .num.cre{color:var(--credit)}
+  .foot{color:var(--muted);font-size:12px;text-align:center;margin-top:30px;line-height:1.7}
+  .empty{padding:40px 16px;text-align:center;color:var(--muted)}
+  .arrow{font-size:10px;opacity:.7;margin-left:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1 id="title">消費紀錄</h1>
+    <span class="updated" id="updated"></span>
+  </header>
+  <div class="tabs" id="tabs"></div>
+  <div id="view"></div>
+  <div class="foot" id="foot"></div>
+</div>
+
+<script src="data.js"></script>
+<script>
+(function(){
+  var D = window.CARD_DATA;
+  var view = document.getElementById('view');
+  var tabsEl = document.getElementById('tabs');
+
+  if(!D || !D.years || !D.years.length){
+    view.innerHTML = '<div class="empty">還沒有資料。請先執行 <code>scripts/gen_local_preview.py</code> 或設定好 Google Sheet 讓 GitHub Action 產生 <code>data.js</code>。</div>';
+    return;
+  }
+
+  var CUR = D.currency || '$';
+  document.getElementById('title').textContent = D.title || '消費紀錄';
+  if(D.generated_at){
+    document.getElementById('updated').textContent =
+      '資料更新於 ' + D.generated_at.replace('T',' ').slice(0,16);
+  }
+
+  // 年份由新到舊
+  var years = D.years.slice().sort(function(a,b){return b.year<a.year?-1:1;});
+
+  function money(n, sign){
+    if(n===null||n===undefined||n==='') return '—';
+    var s = CUR + Math.abs(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+    return (sign && n<0? '-':'') + s;
+  }
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+
+  // ---- 分頁列 ----
+  var current = 'ALL';
+  function buildTabs(){
+    var html = '<button class="tab" data-y="ALL">總覽</button>';
+    years.forEach(function(y){ html += '<button class="tab" data-y="'+esc(y.year)+'">'+esc(y.year)+'</button>'; });
+    tabsEl.innerHTML = html;
+    Array.prototype.forEach.call(tabsEl.children, function(b){
+      b.onclick = function(){ current = b.getAttribute('data-y'); render(); };
+    });
+  }
+
+  function cardsHtml(items){
+    return '<div class="cards">'+items.map(function(it){
+      return '<div class="card"><div class="k">'+esc(it.k)+'</div><div class="v '+(it.cls||'')+'">'+it.v+'</div></div>';
+    }).join('')+'</div>';
+  }
+
+  // ---- 總覽 ----
+  function renderAll(){
+    var tExp=0,tCre=0,tCnt=0;
+    years.forEach(function(y){ tExp+=y.summary.total_expense; tCre+=y.summary.total_credit; tCnt+=y.summary.count; });
+    // 最新一年的期末餘額
+    var latestBal=null;
+    for(var i=0;i<years.length;i++){ if(years[i].summary.end_balance!=null){ latestBal=years[i].summary.end_balance; break; } }
+
+    var html = cardsHtml([
+      {k:'總支出（全部年份）', v:money(tExp), cls:'exp'},
+      {k:'總入金＆轉帳', v:money(tCre), cls:'cre'},
+      {k:'淨現金流', v:money(tCre-tExp,true), cls:(tCre-tExp>=0?'pos':'neg')},
+      {k:'最新餘額', v:money(latestBal)},
+      {k:'總筆數', v:tCnt.toLocaleString()}
+    ]);
+
+    // 逐年長條（支出 vs 入金）
+    var maxY = Math.max.apply(null, years.map(function(y){return Math.max(y.summary.total_expense,y.summary.total_credit);}))||1;
+    var rows = years.slice().sort(function(a,b){return a.year<b.year?-1:1;}).map(function(y){
+      var e=(y.summary.total_expense/maxY*100), c=(y.summary.total_credit/maxY*100);
+      return '<div style="margin-bottom:16px">'+
+        '<div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px">'+
+          '<b>'+esc(y.year)+'</b>'+
+          '<span style="color:var(--muted)">支出 '+money(y.summary.total_expense)+' · 入金 '+money(y.summary.total_credit)+'</span>'+
+        '</div>'+
+        '<div class="bar" style="margin-bottom:4px"><i style="width:'+e+'%;background:var(--expense)"></i></div>'+
+        '<div class="bar"><i style="width:'+c+'%;background:var(--credit)"></i></div>'+
+      '</div>';
+    }).join('');
+
+    html += '<section class="panel"><h2>逐年比較</h2>'+
+      '<div class="legend" style="padding-top:12px"><span><i class="dot" style="background:var(--expense)"></i>支出</span>'+
+      '<span><i class="dot" style="background:var(--credit)"></i>入金＆轉帳</span></div>'+
+      '<div class="body" style="padding-top:2px">'+rows+'</div></section>';
+
+    view.innerHTML = html;
+  }
+
+  // ---- 單一年份 ----
+  var sortState = {key:'date', dir:1};
+  function renderYear(y){
+    var s=y.summary;
+    var html = cardsHtml([
+      {k:'總支出', v:money(s.total_expense), cls:'exp'},
+      {k:'入金＆轉帳', v:money(s.total_credit), cls:'cre'},
+      {k:'淨現金流', v:money(s.net,true), cls:(s.net>=0?'pos':'neg')},
+      {k:'期末餘額', v:money(s.end_balance)},
+      {k:'筆數', v:s.count}
+    ]);
+
+    // 分類
+    if(y.categories && y.categories.length){
+      var maxC = y.categories[0].total||1;
+      var crows = y.categories.map(function(c){
+        return '<div class="catrow">'+
+          '<div class="catname">'+esc(c.name)+'</div>'+
+          '<div class="catval">'+money(c.total)+' · '+(c.share*100).toFixed(1)+'% · '+c.count+'筆</div>'+
+          '<div class="bar"><i style="width:'+(c.total/maxC*100)+'%"></i></div>'+
+        '</div>';
+      }).join('');
+      html += '<section class="panel"><h2>分類支出</h2><div class="body">'+crows+'</div></section>';
+    }
+
+    // 月趨勢
+    if(y.months && y.months.length){
+      var maxM = Math.max.apply(null, y.months.map(function(m){return Math.max(m.expense,m.credit);}))||1;
+      var mcols = y.months.map(function(m){
+        var eh=Math.max(2,m.expense/maxM*96), ch=Math.max(2,m.credit/maxM*96);
+        var lbl=m.month.slice(5);
+        return '<div class="mcol" title="'+esc(m.month)+'\n支出 '+money(m.expense)+'\n入金 '+money(m.credit)+'">'+
+          '<div class="mbars"><i class="e" style="height:'+eh+'px"></i><i class="c" style="height:'+ch+'px"></i></div>'+
+          '<div class="mlabel">'+lbl+'</div></div>';
+      }).join('');
+      html += '<section class="panel"><h2>每月收支</h2>'+
+        '<div class="legend" style="padding-top:12px"><span><i class="dot" style="background:var(--expense)"></i>支出</span>'+
+        '<span><i class="dot" style="background:var(--credit)"></i>入金</span></div>'+
+        '<div class="body"><div class="months">'+mcols+'</div></div></section>';
+    }
+
+    // 交易表
+    html += '<section class="panel">'+
+      '<div class="toolbar">'+
+        '<input class="search" id="q" placeholder="搜尋日期、種類、說明…">'+
+        '<span class="count" id="cnt"></span>'+
+      '</div>'+
+      '<div class="tablescroll"><table>'+
+        '<thead><tr>'+
+          th('date','日期')+th('category','種類')+th('description','詳細說明')+
+          th('expense','花費',true)+th('credit','入金／轉帳',true)+th('balance','餘額',true)+
+        '</tr></thead><tbody id="tbody"></tbody>'+
+      '</table></div></section>';
+
+    view.innerHTML = html;
+
+    var q = document.getElementById('q');
+    q.addEventListener('input', function(){ drawRows(y); });
+    Array.prototype.forEach.call(view.querySelectorAll('th[data-key]'), function(th){
+      th.onclick=function(){
+        var k=th.getAttribute('data-key');
+        if(sortState.key===k) sortState.dir*=-1; else {sortState.key=k;sortState.dir=1;}
+        drawRows(y);
+      };
+    });
+    drawRows(y);
+  }
+
+  function th(key,label,num){
+    var a='';
+    if(sortState.key===key) a='<span class="arrow">'+(sortState.dir>0?'▲':'▼')+'</span>';
+    return '<th data-key="'+key+'" class="'+(num?'num':'')+'">'+label+a+'</th>';
+  }
+
+  function drawRows(y){
+    var q=(document.getElementById('q').value||'').trim().toLowerCase();
+    var rows=y.records.slice();
+    if(q){
+      rows=rows.filter(function(r){
+        return (r.date+' '+r.category+' '+r.description).toLowerCase().indexOf(q)>=0;
+      });
+    }
+    var k=sortState.key, dir=sortState.dir;
+    rows.sort(function(a,b){
+      var va=a[k], vb=b[k];
+      if(k==='expense'||k==='credit'||k==='balance'){ va=va==null?-Infinity:va; vb=vb==null?-Infinity:vb; return (va-vb)*dir; }
+      va=String(va||''); vb=String(vb||'');
+      return va<vb?-dir:va>vb?dir:0;
+    });
+
+    var body=rows.map(function(r){
+      return '<tr>'+
+        '<td>'+esc(r.date)+'</td>'+
+        '<td>'+(r.category?'<span class="pill">'+esc(r.category)+'</span>':'')+'</td>'+
+        '<td class="desc">'+esc(r.description)+'</td>'+
+        '<td class="num exp">'+(r.expense>0?money(r.expense):'')+'</td>'+
+        '<td class="num cre">'+(r.credit>0?money(r.credit):'')+'</td>'+
+        '<td class="num">'+money(r.balance)+'</td>'+
+      '</tr>';
+    }).join('');
+    document.getElementById('tbody').innerHTML = body || '<tr><td colspan="6" class="empty">找不到符合的紀錄</td></tr>';
+    document.getElementById('cnt').textContent = '共 '+rows.length+' 筆';
+  }
+
+  function render(){
+    Array.prototype.forEach.call(tabsEl.children, function(b){
+      b.classList.toggle('active', b.getAttribute('data-y')===current);
+    });
+    window.scrollTo(0,0);
+    if(current==='ALL') renderAll();
+    else { var y=years.filter(function(x){return x.year===current;})[0]; if(y) renderYear(y); }
+  }
+
+  document.getElementById('foot').innerHTML =
+    '每月由 GitHub Action 自動從 Google Sheet 更新 · 靜態網頁，可放 GitHub Pages';
+
+  buildTabs();
+  render();
+})();
+</script>
+</body>
+</html>
