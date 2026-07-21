@@ -1,5 +1,16 @@
 # 爸爸的卡片消費紀錄 — 自動更新網站
 
+## 🔗 常用連結（放這裡以後好找）
+
+| | 網址 |
+|---|---|
+| 📊 **看網站（Geoff BofA Spending）** | **https://changfanghan0324.github.io/Geoff-BofA-Spending/** |
+| 📝 記帳的 Google Sheet | https://docs.google.com/spreadsheets/d/1i9j_XCqT70ZGFq-6IPMvT035l5XjkXtLj0xSIDCy9fQ/edit |
+| 💻 GitHub 專案 | https://github.com/changfanghan0324/Geoff-BofA-Spending |
+| ⚙️ 手動立刻更新 | 到 GitHub 專案的 **Actions** 分頁 → 「每月更新資料」→ **Run workflow** |
+
+---
+
 把記帳資料放在 **Google Sheet**，網站每個月由 **GitHub Action** 自動去抓最新資料、
 產生靜態網頁，放在 **GitHub Pages** 上就能用網址打開看。
 
