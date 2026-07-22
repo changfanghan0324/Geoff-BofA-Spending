@@ -304,6 +304,25 @@ def write_data_js(payload, path=None):
     return path
 
 
+def read_existing_payload(path):
+    """讀取現有 data.js 裡的 JSON，讀不到回 None。"""
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            t = f.read()
+        return json.loads(t[t.index("{"):t.rindex("}") + 1])
+    except Exception:
+        return None
+
+
+def same_data(a, b):
+    """比較兩份 payload 是否實質相同（忽略 generated_at 時間戳）。"""
+    if not a or not b:
+        return False
+    ax = {k: v for k, v in a.items() if k != "generated_at"}
+    bx = {k: v for k, v in b.items() if k != "generated_at"}
+    return ax == bx
+
+
 def fetch_google_xlsx(sheet_id):
     url = "https://docs.google.com/spreadsheets/d/%s/export?format=xlsx" % sheet_id
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -328,6 +347,13 @@ def main():
         sys.exit(1)
 
     payload = build_payload(records, config)
+
+    # 只有資料真的變動才寫檔（忽略時間戳），這樣天天自動跑也不會產生無意義的 commit
+    existing = read_existing_payload(os.path.join(ROOT, "data.js"))
+    if same_data(existing, payload):
+        print("資料沒有變動，data.js 保持不變（不會產生 commit）")
+        return
+
     out = write_data_js(payload)
     print("完成：%s（%d 個年份，%d 筆紀錄）" % (
         out, len(payload["years"]), sum(len(y["records"]) for y in payload["years"])))
