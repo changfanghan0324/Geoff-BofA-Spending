@@ -1,5 +1,5 @@
 window.CARD_DATA = {
- "generated_at": "2026-07-21T23:14:41+08:00",
+ "generated_at": "2026-07-22T14:59:01+00:00",
  "title": "Geoff BofA Spending",
  "currency": "$",
  "years": [
@@ -6857,54 +6857,54 @@ window.CARD_DATA = {
   {
    "year": "2026",
    "summary": {
-    "total_expense": 24778.7,
-    "total_credit": 0.0,
-    "net": -24778.7,
-    "count": 38,
-    "end_balance": 44985.39
+    "total_expense": 28533.83,
+    "total_credit": 100000.0,
+    "net": 71466.17,
+    "count": 47,
+    "end_balance": 141230.26
    },
    "categories": [
     {
      "name": "Tuition & Education",
-     "total": 9992.0,
-     "count": 2,
-     "share": 0.4032
+     "total": 12113.07,
+     "count": 3,
+     "share": 0.4245
     },
     {
      "name": "Gifts & Family",
      "total": 6396.0,
      "count": 3,
-     "share": 0.2581
+     "share": 0.2242
     },
     {
      "name": "Monthly Support",
      "total": 3500.0,
      "count": 5,
-     "share": 0.1413
-    },
-    {
-     "name": "Housing & HOA",
-     "total": 1994.84,
-     "count": 7,
-     "share": 0.0805
+     "share": 0.1227
     },
     {
      "name": "Travel & Transportation",
-     "total": 1196.5,
-     "count": 4,
-     "share": 0.0483
+     "total": 2366.5,
+     "count": 7,
+     "share": 0.0829
+    },
+    {
+     "name": "Housing & HOA",
+     "total": 2243.98,
+     "count": 8,
+     "share": 0.0786
     },
     {
      "name": "Utilities, Phone & Internet",
-     "total": 969.86,
-     "count": 15,
-     "share": 0.0391
+     "total": 1184.78,
+     "count": 18,
+     "share": 0.0415
     },
     {
      "name": "Fees & Banking",
      "total": 729.5,
      "count": 2,
-     "share": 0.0294
+     "share": 0.0256
     }
    ],
    "months": [
@@ -6935,8 +6935,13 @@ window.CARD_DATA = {
     },
     {
      "month": "2026-06",
-     "expense": 868.59,
+     "expense": 3335.66,
      "credit": 0.0
+    },
+    {
+     "month": "2026-07",
+     "expense": 1288.06,
+     "credit": 100000.0
     }
    ],
    "records": [
@@ -7281,6 +7286,87 @@ window.CARD_DATA = {
      "credit": 0.0,
      "balance": 44985.39,
      "amount": -19.45
+    },
+    {
+     "date": "2026-06-18",
+     "category": "Tuition & Education",
+     "description": "Justin UVU 2026 Summer tuition",
+     "expense": 2121.07,
+     "credit": 0.0,
+     "balance": 42864.32,
+     "amount": -2121.07
+    },
+    {
+     "date": "2026-06-22",
+     "category": "Travel & Transportation",
+     "description": "Peter ticket tpe to slc (EVA, Delta) 2026",
+     "expense": 346.0,
+     "credit": 0.0,
+     "balance": 42518.32,
+     "amount": -346.0
+    },
+    {
+     "date": "2026-07-01",
+     "category": "Housing & HOA",
+     "description": "HOA",
+     "expense": 249.14,
+     "credit": 0.0,
+     "balance": 42169.18,
+     "amount": -249.14
+    },
+    {
+     "date": "2026-07-01",
+     "category": "Utilities, Phone & Internet",
+     "description": "Monthly Xfinity Phone & Internet",
+     "expense": 100.0,
+     "credit": 0.0,
+     "balance": 42418.32,
+     "amount": -100.0
+    },
+    {
+     "date": "2026-07-02",
+     "category": "Utilities, Phone & Internet",
+     "description": "Utility (Electricity)",
+     "expense": 101.86,
+     "credit": 0.0,
+     "balance": 42054.26,
+     "amount": -101.86
+    },
+    {
+     "date": "2026-07-02",
+     "category": "Utilities, Phone & Internet",
+     "description": "Utility (gas)",
+     "expense": 13.06,
+     "credit": 0.0,
+     "balance": 42156.12,
+     "amount": -13.06
+    },
+    {
+     "date": "2026-07-08",
+     "category": "Travel & Transportation",
+     "description": "2026.08.03 justin lax to slc",
+     "expense": 230.0,
+     "credit": 0.0,
+     "balance": 41824.26,
+     "amount": -230.0
+    },
+    {
+     "date": "2026-07-08",
+     "category": "Travel & Transportation",
+     "description": "2026.08.03 peter slc to bos",
+     "expense": 594.0,
+     "credit": 0.0,
+     "balance": 41230.26,
+     "amount": -594.0
+    },
+    {
+     "date": "2026-07-22",
+     "category": "Credits / Funding",
+     "description": "From Dad",
+     "expense": 0.0,
+     "credit": 100000.0,
+     "balance": 141230.26,
+     "amount": 100000.0
     }
    ]
   }
