@@ -147,9 +147,21 @@
   <div class="foot" id="foot"></div>
 </div>
 
-<script src="data.js"></script>
 <script>
+// 帶時間戳載入 data.js，確保永遠拿到最新資料（避免瀏覽器快取舊資料）
 (function(){
+  var s = document.createElement('script');
+  s.src = 'data.js?t=' + Date.now();
+  s.onload = function(){ startApp(); };
+  s.onerror = function(){
+    document.getElementById('view').innerHTML =
+      '<div class="empty">讀取資料失敗，請重新整理頁面試試。</div>';
+  };
+  document.head.appendChild(s);
+})();
+</script>
+<script>
+function startApp(){
   var D = window.CARD_DATA;
   var view = document.getElementById('view');
   var tabsEl = document.getElementById('tabs');
@@ -516,10 +528,10 @@
   };
   updateLangBtn();
 
-  document.getElementById('foot').innerHTML='每月由 GitHub Action 自動從 Google Sheet 更新 · 靜態網頁';
+  document.getElementById('foot').innerHTML='每天自動從 Google Sheet 更新兩次（台灣早上 10 點、晚上 10 點）· 靜態網頁';
   buildTabs();
   render();
-})();
+}
 </script>
 </body>
 </html>
