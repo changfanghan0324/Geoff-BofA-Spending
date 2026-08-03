@@ -1,8 +1,9 @@
-name: 每月更新資料
+name: 每日更新資料
 
 on:
   schedule:
-    - cron: "0 2 1 * *"      # 每月 1 號 UTC 02:00（台灣早上 10 點）
+    - cron: "0 2 * * *"      # 每天 UTC 02:00（台灣早上 10 點）
+    - cron: "0 14 * * *"     # 每天 UTC 14:00（台灣晚上 10 點）
   workflow_dispatch:
 
 permissions:
