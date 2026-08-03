@@ -1,5 +1,5 @@
 window.CARD_DATA = {
- "generated_at": "2026-07-22T14:59:01+00:00",
+ "generated_at": "2026-08-03T17:01:27+00:00",
  "title": "Geoff BofA Spending",
  "currency": "$",
  "years": [
@@ -6857,54 +6857,60 @@ window.CARD_DATA = {
   {
    "year": "2026",
    "summary": {
-    "total_expense": 28533.83,
+    "total_expense": 31954.19,
     "total_credit": 100000.0,
-    "net": 71466.17,
-    "count": 47,
-    "end_balance": 141230.26
+    "net": 68045.81,
+    "count": 54,
+    "end_balance": 137909.9
    },
    "categories": [
     {
      "name": "Tuition & Education",
      "total": 12113.07,
      "count": 3,
-     "share": 0.4245
+     "share": 0.3791
+    },
+    {
+     "name": "Monthly Support",
+     "total": 6500.0,
+     "count": 7,
+     "share": 0.2034
     },
     {
      "name": "Gifts & Family",
      "total": 6396.0,
      "count": 3,
-     "share": 0.2242
-    },
-    {
-     "name": "Monthly Support",
-     "total": 3500.0,
-     "count": 5,
-     "share": 0.1227
-    },
-    {
-     "name": "Travel & Transportation",
-     "total": 2366.5,
-     "count": 7,
-     "share": 0.0829
+     "share": 0.2002
     },
     {
      "name": "Housing & HOA",
-     "total": 2243.98,
+     "total": 2493.12,
+     "count": 9,
+     "share": 0.078
+    },
+    {
+     "name": "Travel & Transportation",
+     "total": 2411.5,
      "count": 8,
-     "share": 0.0786
+     "share": 0.0755
     },
     {
      "name": "Utilities, Phone & Internet",
-     "total": 1184.78,
-     "count": 18,
-     "share": 0.0415
+     "total": 1296.0,
+     "count": 20,
+     "share": 0.0406
     },
     {
      "name": "Fees & Banking",
      "total": 729.5,
      "count": 2,
-     "share": 0.0256
+     "share": 0.0228
+    },
+    {
+     "name": "Credits / Funding",
+     "total": 15.0,
+     "count": 1,
+     "share": 0.0005
     }
    ],
    "months": [
@@ -6940,8 +6946,13 @@ window.CARD_DATA = {
     },
     {
      "month": "2026-07",
-     "expense": 1288.06,
+     "expense": 1303.06,
      "credit": 100000.0
+    },
+    {
+     "month": "2026-08",
+     "expense": 3405.36,
+     "credit": 0.0
     }
    ],
    "records": [
@@ -7367,6 +7378,69 @@ window.CARD_DATA = {
      "credit": 100000.0,
      "balance": 141230.26,
      "amount": 100000.0
+    },
+    {
+     "date": "2026-07-23",
+     "category": "Credits / Funding",
+     "description": "Wire Transfer fee",
+     "expense": 15.0,
+     "credit": 0.0,
+     "balance": 141215.26,
+     "amount": -15.0
+    },
+    {
+     "date": "2026-08-03",
+     "category": "Monthly Support",
+     "description": "2026 Aug For Justin Monthly",
+     "expense": 1000.0,
+     "credit": 0.0,
+     "balance": 138215.26,
+     "amount": -1000.0
+    },
+    {
+     "date": "2026-08-03",
+     "category": "Travel & Transportation",
+     "description": "2026 LAX -SLC Check ing bag fee",
+     "expense": 45.0,
+     "credit": 0.0,
+     "balance": 138170.26,
+     "amount": -45.0
+    },
+    {
+     "date": "2026-08-03",
+     "category": "Monthly Support",
+     "description": "First Month of Boston for Peter Wealth",
+     "expense": 2000.0,
+     "credit": 0.0,
+     "balance": 139215.26,
+     "amount": -2000.0
+    },
+    {
+     "date": "2026-08-03",
+     "category": "Housing & HOA",
+     "description": "HOA",
+     "expense": 249.14,
+     "credit": 0.0,
+     "balance": 137921.12,
+     "amount": -249.14
+    },
+    {
+     "date": "2026-08-03",
+     "category": "Utilities, Phone & Internet",
+     "description": "Internet and Mobile",
+     "expense": 100.0,
+     "credit": 0.0,
+     "balance": 137809.9,
+     "amount": -100.0
+    },
+    {
+     "date": "2026-08-03",
+     "category": "Utilities, Phone & Internet",
+     "description": "Utility - Gas",
+     "expense": 11.22,
+     "credit": 0.0,
+     "balance": 137909.9,
+     "amount": -11.22
     }
    ]
   }
