@@ -1,5 +1,5 @@
 window.CARD_DATA = {
- "generated_at": "2026-08-03T17:01:27+00:00",
+ "generated_at": "2026-08-05T05:19:52+00:00",
  "title": "Geoff BofA Spending",
  "currency": "$",
  "years": [
@@ -6857,60 +6857,60 @@ window.CARD_DATA = {
   {
    "year": "2026",
    "summary": {
-    "total_expense": 31954.19,
+    "total_expense": 33827.5,
     "total_credit": 100000.0,
-    "net": 68045.81,
-    "count": 54,
-    "end_balance": 137909.9
+    "net": 66172.5,
+    "count": 55,
+    "end_balance": 135936.59
    },
    "categories": [
     {
      "name": "Tuition & Education",
-     "total": 12113.07,
-     "count": 3,
-     "share": 0.3791
+     "total": 13986.38,
+     "count": 4,
+     "share": 0.4135
     },
     {
      "name": "Monthly Support",
      "total": 6500.0,
      "count": 7,
-     "share": 0.2034
+     "share": 0.1922
     },
     {
      "name": "Gifts & Family",
      "total": 6396.0,
      "count": 3,
-     "share": 0.2002
+     "share": 0.1891
     },
     {
      "name": "Housing & HOA",
      "total": 2493.12,
      "count": 9,
-     "share": 0.078
+     "share": 0.0737
     },
     {
      "name": "Travel & Transportation",
      "total": 2411.5,
      "count": 8,
-     "share": 0.0755
+     "share": 0.0713
     },
     {
      "name": "Utilities, Phone & Internet",
      "total": 1296.0,
      "count": 20,
-     "share": 0.0406
+     "share": 0.0383
     },
     {
      "name": "Fees & Banking",
      "total": 729.5,
      "count": 2,
-     "share": 0.0228
+     "share": 0.0216
     },
     {
      "name": "Credits / Funding",
      "total": 15.0,
      "count": 1,
-     "share": 0.0005
+     "share": 0.0004
     }
    ],
    "months": [
@@ -6951,7 +6951,7 @@ window.CARD_DATA = {
     },
     {
      "month": "2026-08",
-     "expense": 3405.36,
+     "expense": 5278.67,
      "credit": 0.0
     }
    ],
@@ -7441,6 +7441,15 @@ window.CARD_DATA = {
      "credit": 0.0,
      "balance": 137909.9,
      "amount": -11.22
+    },
+    {
+     "date": "2026-08-04",
+     "category": "Tuition & Education",
+     "description": "Peter BU PC MacBook Pro 32Ram",
+     "expense": 1873.31,
+     "credit": 0.0,
+     "balance": 135936.59,
+     "amount": -1873.31
     }
    ]
   }
