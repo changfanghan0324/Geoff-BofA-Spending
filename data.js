@@ -1,5 +1,5 @@
 window.CARD_DATA = {
- "generated_at": "2026-08-05T05:19:52+00:00",
+ "generated_at": "2026-08-09T03:47:43+00:00",
  "title": "Geoff BofA Spending",
  "currency": "$",
  "years": [
@@ -6857,54 +6857,54 @@ window.CARD_DATA = {
   {
    "year": "2026",
    "summary": {
-    "total_expense": 33827.5,
+    "total_expense": 35661.19,
     "total_credit": 100000.0,
-    "net": 66172.5,
-    "count": 55,
-    "end_balance": 135936.59
+    "net": 64338.81,
+    "count": 58,
+    "end_balance": 134102.9
    },
    "categories": [
     {
      "name": "Tuition & Education",
      "total": 13986.38,
      "count": 4,
-     "share": 0.4135
+     "share": 0.3922
     },
     {
      "name": "Monthly Support",
      "total": 6500.0,
      "count": 7,
-     "share": 0.1922
+     "share": 0.1823
     },
     {
      "name": "Gifts & Family",
      "total": 6396.0,
      "count": 3,
-     "share": 0.1891
+     "share": 0.1794
     },
     {
      "name": "Housing & HOA",
-     "total": 2493.12,
-     "count": 9,
-     "share": 0.0737
+     "total": 3987.12,
+     "count": 10,
+     "share": 0.1118
     },
     {
      "name": "Travel & Transportation",
-     "total": 2411.5,
-     "count": 8,
-     "share": 0.0713
+     "total": 2731.5,
+     "count": 9,
+     "share": 0.0766
     },
     {
      "name": "Utilities, Phone & Internet",
-     "total": 1296.0,
-     "count": 20,
-     "share": 0.0383
+     "total": 1315.69,
+     "count": 21,
+     "share": 0.0369
     },
     {
      "name": "Fees & Banking",
      "total": 729.5,
      "count": 2,
-     "share": 0.0216
+     "share": 0.0205
     },
     {
      "name": "Credits / Funding",
@@ -6951,7 +6951,7 @@ window.CARD_DATA = {
     },
     {
      "month": "2026-08",
-     "expense": 5278.67,
+     "expense": 7112.36,
      "credit": 0.0
     }
    ],
@@ -7450,6 +7450,33 @@ window.CARD_DATA = {
      "credit": 0.0,
      "balance": 135936.59,
      "amount": -1873.31
+    },
+    {
+     "date": "2026-08-06",
+     "category": "Utilities, Phone & Internet",
+     "description": "Utility - Elecrtic",
+     "expense": 19.69,
+     "credit": 0.0,
+     "balance": 135916.9,
+     "amount": -19.69
+    },
+    {
+     "date": "2026-08-08",
+     "category": "Housing & HOA",
+     "description": "Peter's First Month Rent + House Deposit",
+     "expense": 1494.0,
+     "credit": 0.0,
+     "balance": 134422.9,
+     "amount": -1494.0
+    },
+    {
+     "date": "2026-08-08",
+     "category": "Travel & Transportation",
+     "description": "Peter's Traffic Card",
+     "expense": 320.0,
+     "credit": 0.0,
+     "balance": 134102.9,
+     "amount": -320.0
     }
    ]
   }
