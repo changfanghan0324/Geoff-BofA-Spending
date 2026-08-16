@@ -1,5 +1,5 @@
 window.CARD_DATA = {
- "generated_at": "2026-08-09T03:47:43+00:00",
+ "generated_at": "2026-08-16T03:04:51+00:00",
  "title": "Geoff BofA Spending",
  "currency": "$",
  "years": [
@@ -6857,54 +6857,54 @@ window.CARD_DATA = {
   {
    "year": "2026",
    "summary": {
-    "total_expense": 35661.19,
+    "total_expense": 36661.19,
     "total_credit": 100000.0,
-    "net": 64338.81,
-    "count": 58,
-    "end_balance": 134102.9
+    "net": 63338.81,
+    "count": 59,
+    "end_balance": 133102.9
    },
    "categories": [
     {
      "name": "Tuition & Education",
      "total": 13986.38,
      "count": 4,
-     "share": 0.3922
+     "share": 0.3815
+    },
+    {
+     "name": "Gifts & Family",
+     "total": 7396.0,
+     "count": 4,
+     "share": 0.2017
     },
     {
      "name": "Monthly Support",
      "total": 6500.0,
      "count": 7,
-     "share": 0.1823
-    },
-    {
-     "name": "Gifts & Family",
-     "total": 6396.0,
-     "count": 3,
-     "share": 0.1794
+     "share": 0.1773
     },
     {
      "name": "Housing & HOA",
      "total": 3987.12,
      "count": 10,
-     "share": 0.1118
+     "share": 0.1088
     },
     {
      "name": "Travel & Transportation",
      "total": 2731.5,
      "count": 9,
-     "share": 0.0766
+     "share": 0.0745
     },
     {
      "name": "Utilities, Phone & Internet",
      "total": 1315.69,
      "count": 21,
-     "share": 0.0369
+     "share": 0.0359
     },
     {
      "name": "Fees & Banking",
      "total": 729.5,
      "count": 2,
-     "share": 0.0205
+     "share": 0.0199
     },
     {
      "name": "Credits / Funding",
@@ -6951,7 +6951,7 @@ window.CARD_DATA = {
     },
     {
      "month": "2026-08",
-     "expense": 7112.36,
+     "expense": 8112.36,
      "credit": 0.0
     }
    ],
@@ -7477,6 +7477,15 @@ window.CARD_DATA = {
      "credit": 0.0,
      "balance": 134102.9,
      "amount": -320.0
+    },
+    {
+     "date": "2026-08-15",
+     "category": "Gifts & Family",
+     "description": "Justin Birthday Cash",
+     "expense": 1000.0,
+     "credit": 0.0,
+     "balance": 133102.9,
+     "amount": -1000.0
     }
    ]
   }
