@@ -1,5 +1,5 @@
 window.CARD_DATA = {
- "generated_at": "2026-08-16T03:04:51+00:00",
+ "generated_at": "2026-08-20T14:29:30+00:00",
  "title": "Geoff BofA Spending",
  "currency": "$",
  "years": [
@@ -6857,60 +6857,60 @@ window.CARD_DATA = {
   {
    "year": "2026",
    "summary": {
-    "total_expense": 36661.19,
+    "total_expense": 72351.19,
     "total_credit": 100000.0,
-    "net": 63338.81,
-    "count": 59,
-    "end_balance": 133102.9
+    "net": 27648.81,
+    "count": 201,
+    "end_balance": 97412.9
    },
    "categories": [
     {
      "name": "Tuition & Education",
-     "total": 13986.38,
-     "count": 4,
-     "share": 0.3815
+     "total": 49676.38,
+     "count": 5,
+     "share": 0.6866
     },
     {
      "name": "Gifts & Family",
      "total": 7396.0,
      "count": 4,
-     "share": 0.2017
+     "share": 0.1022
     },
     {
      "name": "Monthly Support",
      "total": 6500.0,
      "count": 7,
-     "share": 0.1773
+     "share": 0.0898
     },
     {
      "name": "Housing & HOA",
      "total": 3987.12,
      "count": 10,
-     "share": 0.1088
+     "share": 0.0551
     },
     {
      "name": "Travel & Transportation",
      "total": 2731.5,
      "count": 9,
-     "share": 0.0745
+     "share": 0.0378
     },
     {
      "name": "Utilities, Phone & Internet",
      "total": 1315.69,
      "count": 21,
-     "share": 0.0359
+     "share": 0.0182
     },
     {
      "name": "Fees & Banking",
      "total": 729.5,
      "count": 2,
-     "share": 0.0199
+     "share": 0.0101
     },
     {
      "name": "Credits / Funding",
      "total": 15.0,
      "count": 1,
-     "share": 0.0004
+     "share": 0.0002
     }
    ],
    "months": [
@@ -6951,11 +6951,1285 @@ window.CARD_DATA = {
     },
     {
      "month": "2026-08",
-     "expense": 8112.36,
+     "expense": 43802.36,
+     "credit": 0.0
+    },
+    {
+     "month": "?",
+     "expense": 0.0,
      "credit": 0.0
     }
    ],
    "records": [
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
+    {
+     "date": "",
+     "category": "",
+     "description": "",
+     "expense": 0.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": 0.0
+    },
     {
      "date": "2026-01-02",
      "category": "Housing & HOA",
@@ -7486,6 +8760,15 @@ window.CARD_DATA = {
      "credit": 0.0,
      "balance": 133102.9,
      "amount": -1000.0
+    },
+    {
+     "date": "2026-08-18",
+     "category": "Tuition & Education",
+     "description": "Peter's BU MSBA tuition for Fall 2026",
+     "expense": 35690.0,
+     "credit": 0.0,
+     "balance": 97412.9,
+     "amount": -35690.0
     }
    ]
   }
